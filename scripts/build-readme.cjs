@@ -11,6 +11,7 @@ const refreshed=data.metadataRefreshedDate || data.reviewedAt;
 const formatDate=value=>new Date(value+'T12:00:00Z').toLocaleDateString('en-US',{month:'long',day:'numeric',year:'numeric',timeZone:'America/New_York'});
 const slug = text => text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const cell = text => String(text).replace(/\|/g, '\\|').replace(/[\r\n]+/g, ' ');
+const formatStars = stars => stars >= 1000 ? `${Math.ceil(stars / 1000)}K` : String(stars);
 const readmes = projects.filter(p => p.review === 'README reviewed').length;
 const intro = `[![RepoHub — explore, organize, and run your repositories](dist/assets/repohub-cover.png)](https://github.com/levanis-design/RepoHub)
 
@@ -21,6 +22,8 @@ A practical English directory of AI tools, agent skills, models, and supporting 
 **[Explore the searchable catalog](https://levanis-design.github.io/repohub-ai-catalog/)** · [Suggest a project](https://github.com/levanis-design/repohub-ai-catalog/issues/new) · [Contribute](CONTRIBUTING.md) · [Download the dataset](dist/catalog.json)
 
 **${repositories} repositories · ${references} reference guides · ${categories.length} categories · Metadata refreshed ${formatDate(refreshed)}**
+
+**Stars reflect popularity, not quality or usefulness.** Smaller, newer, or niche projects can be worth exploring. Consider their fit, documentation, maintenance, and what they actually do. Counts of 1,000 or more are rounded up to whole thousands (K); exact counts remain in the dataset.
 
 Includes the complete [AI Pulse Georgia collection](https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia), merged with the curator's favorites, TradeDesk, and RepoHub. All ${data.upstream?.listedEntries || 0} upstream entries are represented. Duplicate and renamed repositories are consolidated, while guides retain their original links. [Seed coverage](dist/coverage.json) and [upstream provenance](dist/catalog.json) record the source lists.
 
@@ -61,7 +64,7 @@ ${categories.map(c => `[${c}](#category-${slug(c)})`).join(' · ')}
 const sections = categories.map(category => {
   const rows = projects.filter(p => p.category === category).sort((a,b) => a.name.localeCompare(b.name)).map(p => {
     const labels = [p.isResource && p.resourceType, p.review, p.experimental && 'Experimental', p.relatedResource && 'Related resource', p.authorProject && 'Curator project', p.isFork && 'Fork'].filter(Boolean).join('; ');
-    const popularity=p.isResource?'—':(p.metadataStatus==='unavailable'?'Unavailable':p.stars.toLocaleString('en-US'));
+    const popularity=p.isResource?'—':(p.metadataStatus==='unavailable'?'Unavailable':formatStars(p.stars));
     return `| [${cell(p.name)}](${p.url}) | ${popularity} | ${cell(p.summary)}<br><sub>${labels}${p.archived?'; Archived':''}</sub> |`;
   });
   return `\n<a id="category-${slug(category)}"></a>\n\n### ${category}\n\n| Repository | Stars | What it helps with |\n|---|---:|---|\n${rows.join('\n')}\n`;
