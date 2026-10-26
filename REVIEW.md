@@ -2,7 +2,7 @@
 
 ## Included
 
-62 actual GitHub projects across 12 categories; three suggested workflows; search and combined filters; per-project source and limitation notes; local saved collections; comparison of up to three projects; JSON/CSV export; downloadable or prefilled GitHub suggestions; original mark; responsive styles and native dialogs. Every original unique repository is represented, with renamed links and duplicates consolidated.
+The complete AI Pulse Georgia collection is merged with all seed favorites: 432 repositories and two reference guides across 21 categories at this revision. The README uses two-column category and project tables without emoji. The cover is the original RepoHub product banner. Search, filters, saved collections, comparison, export, and suggested workflows remain available.
 
 ## Verified
 
@@ -15,7 +15,7 @@
 
 No browser surface is available through the session's browser automation tool. Desktop and mobile visual appearance, Google Font loading, actual native download behavior, and keyboard navigation need a real-browser review. DOM tests exercise the app logic but do not replace visual browser QA.
 
-The listed tools themselves were not installed or workflow-tested. Sixteen project records have README review evidence; the remaining 46 are metadata-reviewed. Platform and cost guidance should be confirmed against current setup documentation before installation. No automatic metadata refresh is enabled.
+The listed tools themselves were not installed or workflow-tested. Sixteen project records retain README review evidence; imported repositories have GitHub metadata evidence and the two references are labeled separately. Platform and cost guidance should be confirmed against current setup documentation before installation. Metadata refresh is automated daily and available on demand; it does not upgrade product-testing evidence.
 
 ## Hosting state
 

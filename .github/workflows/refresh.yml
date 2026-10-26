@@ -1,0 +1,73 @@
+name: Refresh catalog
+
+on:
+  schedule:
+    - cron: '17 10 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: catalog-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Import upstream and refresh GitHub metadata
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python scripts/refresh-catalog.py
+      - run: node scripts/build-readme.cjs
+      - run: npm ci --ignore-scripts --no-audit --no-fund
+      - run: npm run check
+      - run: npm test
+      - run: python -m unittest discover -s scripts -p 'test_refresh.py'
+      - run: node scripts/build-readme.cjs --check
+      - name: Commit refreshed data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          if git diff --quiet -- dist/catalog.json README.md; then
+            echo "Catalog is unchanged."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add dist/catalog.json README.md
+            git commit -m "chore: refresh upstream collection and GitHub metadata"
+            git -c credential.helper= -c 'credential.helper=!gh auth git-credential' push origin HEAD:main
+          fi
+      # GITHUB_TOKEN commits do not trigger other workflows. Deploy this exact
+      # validated dataset here instead of waiting for the push workflow.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: refresh
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish refreshed catalog
+        id: deployment
+        uses: actions/deploy-pages@v4

@@ -7,6 +7,10 @@
   <link rel="canonical" href="https://levanis-design.github.io/repohub-ai-catalog/">
   <meta name="description" content="Find practical AI tools and agent skills. Compare setup requirements, understand costs, and build a useful collection.">
   <meta name="theme-color" content="#eef3f3">
+  <meta property="og:title" content="RepoHub AI Catalog">
+  <meta property="og:description" content="Explore AI tools, agent skills, and supporting resources with current GitHub metadata and honest review notes.">
+  <meta property="og:image" content="https://levanis-design.github.io/repohub-ai-catalog/assets/repohub-cover.png">
+  <meta property="og:type" content="website">
   <title>RepoHub AI Catalog — Find your next useful tool</title>
   <link rel="icon" href="mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +35,7 @@
       <div id="loading" class="loading-state"><h1>Loading the catalog</h1><p>Getting the projects and their review notes.</p></div>
       <section id="catalog-screen" class="screen" hidden>
         <div class="title-row"><div><h1 id="catalog-title">Find your next useful tool.</h1><p class="page-intro" id="catalog-intro">AI tools and agent skills, with the details that matter before you install.</p></div><button id="export-button" class="button secondary"></button></div>
-        <div class="collection-summary"><span id="project-summary"></span><span class="summary-divider"></span><span>Reviewed October 25, 2026</span><button class="text-button" data-go="about">What “reviewed” means <span aria-hidden="true">↗</span></button></div>
+        <div class="collection-summary"><span id="project-summary"></span><span class="summary-divider"></span><span id="freshness-date"></span><button class="text-button" data-go="about">What “reviewed” means <span aria-hidden="true">↗</span></button></div>
         <div id="workflow-banner" class="workflow-banner"><div class="workflow-intro"><span class="outline-symbol" id="workflow-symbol"></span><div><strong>Have a goal in mind?</strong><span>Start with a practical workflow.</span></div></div><div class="workflow-links"><button data-workflow="website">Build a website <span aria-hidden="true">↗</span></button><button data-workflow="research">Research a topic <span aria-hidden="true">↗</span></button><button data-workflow="video">Make a video <span aria-hidden="true">↗</span></button></div></div>
         <div class="catalog-tabs" role="group" aria-label="Catalog collections"><button class="catalog-tab active" data-collection="all" aria-pressed="true">All projects <span id="all-count"></span></button><button class="catalog-tab" data-collection="featured" aria-pressed="false">Start here</button><button class="catalog-tab" data-collection="experimental" aria-pressed="false">Experimental</button></div>
         <form id="filter-form" class="filter-form" role="search" aria-label="Filter projects">

@@ -1,6 +1,6 @@
 # Publication and maintenance
 
-The user approved the catalog and requested GitHub publication with the full original list: 60 unique seed repositories plus TradeDesk and RepoHub, for 62 projects.
+The catalog includes the curator's original list and the complete AI Pulse Georgia collection, deduplicated by canonical repository and retaining separate guide links. See `dist/catalog.json` for current counts, source revision, and refresh time.
 
 ## Publication
 
@@ -25,6 +25,6 @@ The user approved the catalog and requested GitHub publication with the full ori
 - Refresh GitHub metadata through a server-side or GitHub Actions job. Never put an API token in browser code.
 - Propose changes for review when projects are renamed, archived, removed, or materially change licensing.
 - Record documentation checks separately from installation tests.
-- Start with a weekly metadata review and monthly editorial review; no schedule or automation is enabled in this draft.
+- The Refresh catalog workflow runs daily at 10:17 UTC and supports manual dispatch. Editorial review remains separate from automated metadata checks.
 - Direct RepoHub app import is a future integration. Exported JSON is portable data, not a claim of current app compatibility.
 

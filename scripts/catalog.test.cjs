@@ -33,16 +33,16 @@ async function app(options = {}) {
 }
 
 test('dataset: unique real source links, honest review levels, and author disclosures', () => {
-  assert.equal(catalog.projects.length, 62);
-  assert.equal(new Set(catalog.projects.map(p => p.id)).size, 62);
-  assert.equal(new Set(catalog.projects.map(p => p.repo.toLowerCase())).size, 62);
+  assert.ok(catalog.projects.length >= 62);
+  assert.equal(new Set(catalog.projects.map(p => p.id)).size, catalog.projects.length);
+  const repos=catalog.projects.filter(p=>!p.isResource);
+  assert.equal(new Set(repos.map(p => p.repo.toLowerCase())).size, repos.length);
   for (const p of catalog.projects) {
-    assert.match(p.url, /^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/);
-    assert.equal(p.url, 'https://github.com/' + p.repo);
-    assert.ok(['Metadata reviewed', 'README reviewed'].includes(p.review));
-    assert.ok(Number.isInteger(p.stars) && p.stars >= 0);
+    if(!p.isResource){assert.match(p.url, /^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/);assert.equal(p.url, 'https://github.com/' + p.repo);}
+    assert.ok(['Metadata reviewed', 'README reviewed','Reference imported','Metadata pending'].includes(p.review));
+    assert.ok(p.isResource || p.metadataStatus==='unavailable' ? p.stars===null || Number.isInteger(p.stars) : Number.isInteger(p.stars) && p.stars >= 0);
     assert.ok(p.summary && p.limitation && p.bestFor);
-    assert.equal(p.reviewedAt, '2026-10-25');
+    assert.match(p.reviewedAt, /^\d{4}-\d{2}-\d{2}$/);
     if (p.repo.startsWith('levanis-design/')) { assert.equal(p.authorProject, true); assert.equal(p.experimental, true); }
   }
 });
@@ -51,20 +51,20 @@ test('first load renders 12 real projects and source-derived counts', async t =>
   const a = await app(); t.after(a.cleanup);
   assert.equal(a.$('loading').hidden, true);
   assert.equal(a.w.document.querySelectorAll('.project-card').length, 12);
-  assert.match(a.$('results-count').textContent, /62 projects/);
+  assert.match(a.$('results-count').textContent, new RegExp(catalog.projects.length+' projects'));
   assert.equal(a.w.document.querySelector('[data-nav=catalog]').getAttribute('aria-current'), 'page');
   assert.deepEqual(a.errors, []);
 });
 
 test('search matches all query words, supports an empty result, and resets', async t => {
   const a = await app(); t.after(a.cleanup);
-  a.input('search', 'local portfolio');
+  a.input('search', 'levanis-design/tradedesk portfolio');
   assert.match(a.$('results-count').textContent, /1 project/);
   assert.match(a.$('project-grid').textContent, /TradeDesk/);
   a.input('search', 'no-such-project-123');
   assert.equal(a.$('empty-state').hidden, false);
   a.$('empty-reset').click();
-  assert.match(a.$('results-count').textContent, /62 projects/);
+  assert.match(a.$('results-count').textContent, new RegExp(catalog.projects.length+' projects'));
 });
 
 test('platform, runtime, API, and GPU filters combine correctly', async t => {
@@ -141,7 +141,7 @@ test('star sorting, pagination, category selection, and URL query initialization
   const expected=[...catalog.projects].sort((a,b)=>b.stars-a.stars)[0];
   assert.equal(a.w.document.querySelector('.project-card').dataset.project, expected.id);
   a.$('load-more').click(); assert.equal(a.w.document.querySelectorAll('.project-card').length,24);
-  a.w.document.querySelector('[data-category=Finance]').click(); assert.match(a.$('results-count').textContent,/3 projects/);
+  a.w.document.querySelector('[data-category="Finance AI"]').click(); assert.match(a.$('results-count').textContent,new RegExp(catalog.projects.filter(p=>p.category==='Finance AI').length+' projects'));
   const b=await app({url:'http://localhost:4178/?q=hyperframes'});t.after(b.cleanup);
   assert.equal(b.$('search').value,'hyperframes');assert.match(b.$('project-grid').textContent,/HyperFrames/);
 });
@@ -193,4 +193,39 @@ test('GitHub suggestion opens a prefilled issue without submitting it', async t 
   assert.equal(opened.pathname,'/levanis-design/repohub-ai-catalog/issues/new');
   assert.match(opened.searchParams.get('body'),/Useful for research/);
   assert.equal(a.downloads.length,0);
+});
+
+test('all upstream entries have provenance and no duplicate source URL', () => {
+  const upstream=catalog.upstream;
+  assert.ok(upstream.listedEntries>=404);
+  assert.equal(upstream.coveredEntries,upstream.listedEntries);
+  const represented=new Set(catalog.projects.flatMap(p=>(p.sources||[]).filter(s=>s.repository===upstream.repository).map(s=>s.url)));
+  for(const url of upstream.sourceUrls) assert.ok(represented.has(url),'Missing upstream entry: '+url);
+  assert.equal(new Set(catalog.projects.map(p=>p.url.toLowerCase())).size,catalog.projects.length);
+});
+
+test('reference guides render safely and do not offer invalid clone commands', async t => {
+  const a=await app();t.after(a.cleanup);
+  const resource=catalog.projects.find(p=>p.isResource);
+  a.input('search',resource.name);
+  const trigger=a.w.document.querySelector(`[data-detail="${resource.id}"]`);
+  assert.ok(trigger);trigger.click();
+  assert.match(a.$('detail-content').textContent,/reference link/i);
+  assert.doesNotMatch(a.$('detail-content').textContent,/git clone/);
+  assert.deepEqual(a.errors,[]);
+});
+
+test('README uses two-column tables, includes the cover, and has no emoji', () => {
+  const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
+  assert.match(readme,/dist\/assets\/repohub-cover.png/);
+  assert.match(readme,/\| Category \| What you will find \|/);
+  for(const line of readme.split('\n').filter(l=>l.startsWith('|')))assert.equal((line.match(/(?<!\\)\|/g)||[]).length,3,line.slice(0,80));
+  // Text-only trademark/copyright symbols are not emoji decoration.
+  assert.doesNotMatch(readme,/(?![©®™])\p{Extended_Pictographic}/u);
+});
+
+test('refresh dates come from data rather than a fixed label', async t => {
+  const data=structuredClone(catalog);data.metadataRefreshedDate='2026-11-02';
+  const a=await app({data});t.after(a.cleanup);
+  assert.match(a.$('freshness-date').textContent,/November 2, 2026/);
 });
