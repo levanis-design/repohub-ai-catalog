@@ -2,7 +2,7 @@
 
 ## Included
 
-The complete AI Pulse Georgia collection is merged with all seed favorites: 432 repositories and two reference guides across 21 categories at this revision. The README uses two-column category and project tables without emoji. The cover is the original RepoHub product banner. Search, filters, saved collections, comparison, export, and suggested workflows remain available.
+The complete AI Pulse Georgia collection is merged with all seed favorites: 432 repositories and two reference guides across 21 categories at this revision. The README uses a two-column category overview and three-column project tables with separate repository, stars, and description columns, without emoji. The cover is the original RepoHub product banner. Search, filters, saved collections, comparison, export, and suggested workflows remain available.
 
 ## Verified
 

@@ -60,11 +60,11 @@ ${categories.map(c => `[${c}](#category-${slug(c)})`).join(' · ')}
 `;
 const sections = categories.map(category => {
   const rows = projects.filter(p => p.category === category).sort((a,b) => a.name.localeCompare(b.name)).map(p => {
-    const labels = [p.review, p.experimental && 'Experimental', p.relatedResource && 'Related resource', p.authorProject && 'Curator project', p.isFork && 'Fork'].filter(Boolean).join('; ');
-    const popularity=p.isResource?p.resourceType:(p.metadataStatus==='unavailable'?'Metadata unavailable':p.stars.toLocaleString('en-US')+' stars');
-    return `| [${cell(p.name)}](${p.url})<br><sub>${popularity}</sub> | ${cell(p.summary)}<br><sub>${labels}${p.archived?'; Archived':''}</sub> |`;
+    const labels = [p.isResource && p.resourceType, p.review, p.experimental && 'Experimental', p.relatedResource && 'Related resource', p.authorProject && 'Curator project', p.isFork && 'Fork'].filter(Boolean).join('; ');
+    const popularity=p.isResource?'—':(p.metadataStatus==='unavailable'?'Unavailable':p.stars.toLocaleString('en-US'));
+    return `| [${cell(p.name)}](${p.url}) | ${popularity} | ${cell(p.summary)}<br><sub>${labels}${p.archived?'; Archived':''}</sub> |`;
   });
-  return `\n<a id="category-${slug(category)}"></a>\n\n### ${category}\n\n| Project | What it helps with |\n|---|---|\n${rows.join('\n')}\n`;
+  return `\n<a id="category-${slug(category)}"></a>\n\n### ${category}\n\n| Repository | Stars | What it helps with |\n|---|---:|---|\n${rows.join('\n')}\n`;
 }).join('');
 const end = `
 ## Use the website

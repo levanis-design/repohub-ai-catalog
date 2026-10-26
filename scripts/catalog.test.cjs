@@ -215,11 +215,19 @@ test('reference guides render safely and do not offer invalid clone commands', a
   assert.deepEqual(a.errors,[]);
 });
 
-test('README uses two-column tables, includes the cover, and has no emoji', () => {
+test('README separates repository stars and keeps the category overview at two columns', () => {
   const readme=fs.readFileSync(path.join(root,'README.md'),'utf8');
   assert.match(readme,/dist\/assets\/repohub-cover.png/);
   assert.match(readme,/\| Category \| What you will find \|/);
-  for(const line of readme.split('\n').filter(l=>l.startsWith('|')))assert.equal((line.match(/(?<!\\)\|/g)||[]).length,3,line.slice(0,80));
+  const repositoryHeader='| Repository | Stars | What it helps with |';
+  assert.equal(readme.split(repositoryHeader).length-1,catalog.categories.length);
+  let columns=2;
+  for(const line of readme.split('\n')) {
+    if(!line.startsWith('|')) { columns=2;continue; }
+    if(line===repositoryHeader)columns=3;
+    assert.equal((line.match(/(?<!\\)\|/g)||[]).length,columns+1,line.slice(0,80));
+    if(columns===3 && line.startsWith('| ['))assert.doesNotMatch(line.split(' | ')[0],/<br>|<sub>/);
+  }
   // Text-only trademark/copyright symbols are not emoji decoration.
   assert.doesNotMatch(readme,/(?![©®™])\p{Extended_Pictographic}/u);
 });
