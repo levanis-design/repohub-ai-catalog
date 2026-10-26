@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <meta name="description" content="Find practical AI tools and agent skills. Compare setup requirements, understand costs, and build a useful collection.">
+  <meta name="theme-color" content="#eef3f3">
+  <title>RepoHub AI Catalog — Find your next useful tool</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header class="mobile-header"><a class="wordmark" href="#catalog"><img src="mark.svg" alt="" width="28" height="28">RepoHub<span>AI Catalog</span></a><button class="icon-button" id="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="sidebar"></button></header>
+  <aside id="sidebar" class="sidebar" aria-label="Main navigation">
+    <a class="wordmark desktop-brand" href="#catalog"><img src="mark.svg" alt="" width="32" height="32"><span>RepoHub<small>AI Catalog</small></span></a>
+    <div class="workspace"><span class="workspace-dot"></span>Independent & open</div>
+    <nav class="main-nav" aria-label="Catalog"><a href="#catalog" data-nav="catalog"></a><a href="#saved" data-nav="saved"></a><a href="#workflows" data-nav="workflows"></a><a href="#about" data-nav="about"></a></nav>
+    <div class="nav-section-label">Browse by task</div><nav id="category-nav" class="category-nav" aria-label="Task categories"></nav>
+    <div class="sidebar-bottom"><div class="repo-note"><strong>From discovery to doing.</strong><p>A small collection of tools worth understanding.</p><a href="https://github.com/levanis-design/RepoHub" target="_blank" rel="noopener noreferrer">Meet the RepoHub app <span aria-hidden="true">↗</span></a></div><a class="curator" href="https://github.com/levanis-design" target="_blank" rel="noopener noreferrer"><span class="curator-avatar">LS</span><span>Curated by Levani Sidiani<small>Built in the open</small></span></a></div>
+  </aside>
+  <div class="app-frame">
+    <div class="topbar"><div class="breadcrumb">Library <span>/</span> <span id="breadcrumb-current">Explore</span></div><div class="draft-status"><span></span>Private review draft</div></div>
+    <main id="main" class="sheet" tabindex="-1">
+      <div id="loading" class="loading-state"><h1>Loading the catalog</h1><p>Getting the projects and their review notes.</p></div>
+      <section id="catalog-screen" class="screen" hidden>
+        <div class="title-row"><div><h1 id="catalog-title">Find your next useful tool.</h1><p class="page-intro" id="catalog-intro">AI tools and agent skills, with the details that matter before you install.</p></div><button id="export-button" class="button secondary"></button></div>
+        <div class="collection-summary"><span id="project-summary"></span><span class="summary-divider"></span><span>Reviewed October 25, 2026</span><button class="text-button" data-go="about">What “reviewed” means <span aria-hidden="true">↗</span></button></div>
+        <div id="workflow-banner" class="workflow-banner"><div class="workflow-intro"><span class="outline-symbol" id="workflow-symbol"></span><div><strong>Have a goal in mind?</strong><span>Start with a practical workflow.</span></div></div><div class="workflow-links"><button data-workflow="website">Build a website <span aria-hidden="true">↗</span></button><button data-workflow="research">Research a topic <span aria-hidden="true">↗</span></button><button data-workflow="video">Make a video <span aria-hidden="true">↗</span></button></div></div>
+        <div class="catalog-tabs" role="group" aria-label="Catalog collections"><button class="catalog-tab active" data-collection="all" aria-pressed="true">All projects <span id="all-count"></span></button><button class="catalog-tab" data-collection="featured" aria-pressed="false">Start here</button><button class="catalog-tab" data-collection="experimental" aria-pressed="false">Experimental</button></div>
+        <form id="filter-form" class="filter-form" role="search" aria-label="Filter projects">
+          <div class="search-field"><span id="search-icon"></span><label class="sr-only" for="search">Search projects</label><input id="search" type="search" placeholder="Search tools, tasks, or keywords…" autocomplete="off"><kbd>/</kbd></div>
+          <label class="select-field"><span class="sr-only">Operating system</span><select id="platform"><option value="">Any platform</option><option>Windows</option><option>macOS</option><option>Linux</option></select></label>
+          <label class="select-field"><span class="sr-only">Runtime</span><select id="runtime"><option value="">Any runtime</option><option>Agent skill</option><option>Local app</option><option>Local tooling</option><option>Local model</option><option>Self-hosted</option></select></label>
+          <button type="button" id="more-filters" class="button secondary" aria-expanded="false" aria-controls="extra-filters"></button>
+        </form>
+        <div id="extra-filters" class="extra-filters" hidden><label><input id="no-api" type="checkbox">No API key required</label><label><input id="no-gpu" type="checkbox">No mandatory GPU</label><label><input id="readme-only" type="checkbox">README reviewed</label></div>
+        <div class="results-toolbar"><div><span id="results-count" role="status" aria-live="polite"></span><button id="clear-filters" class="text-button" hidden>Clear filters</button></div><label class="sort-label">Sort by <select id="sort"><option value="curated">Curated order</option><option value="stars">Most starred</option><option value="name">Name A–Z</option><option value="updated">Recently updated</option></select></label></div>
+        <div id="active-filters" class="active-filters" aria-label="Active filters"></div>
+        <div id="project-grid" class="project-grid"></div>
+        <div id="empty-state" class="empty-state" hidden><span id="empty-icon"></span><h2>No projects match yet.</h2><p>Try a broader search or remove a filter.</p><button id="empty-reset" class="button primary">Reset filters</button></div>
+        <div class="load-more-row"><button id="load-more" class="button secondary" hidden>Show more projects</button><span id="shown-count"></span></div>
+        <div class="catalog-footnote"><p>Popularity is a snapshot, not a quality score. Requirements can change; confirm them in the original documentation.</p><button class="text-button" id="suggest-button">Suggest a project <span aria-hidden="true">↗</span></button></div>
+      </section>
+      <section id="workflows-screen" class="screen" hidden></section>
+      <section id="about-screen" class="screen" hidden></section>
+      <footer class="site-footer"><span>RepoHub AI Catalog <span class="footer-dot">·</span> An independent collection by Levani Sidiani</span><a href="https://github.com/tornikebolokadze1-cyber/awesome-ai-pulse-georgia" target="_blank" rel="noopener noreferrer">Inspired by AI Pulse Georgia ↗</a></footer>
+    </main>
+  </div>
+  <div id="compare-tray" class="compare-tray" hidden><div><strong id="compare-count"></strong><span id="compare-names"></span></div><div><button id="compare-clear" class="text-button">Clear</button><button id="compare-open" class="button primary">Compare projects</button></div></div>
+  <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div id="detail-content"></div></dialog>
+  <dialog id="compare-dialog" class="wide-dialog" aria-labelledby="compare-title"><div class="dialog-top"><h2 id="compare-title">Compare your options</h2><button class="icon-button close-dialog" aria-label="Close comparison"></button></div><p class="dialog-intro">Compare requirements first. Review labels describe documentation checks, not installation tests.</p><div id="comparison-content" class="comparison-scroll" tabindex="0" aria-label="Scrollable project comparison"></div></dialog>
+  <dialog id="export-dialog" aria-labelledby="export-title"><div class="dialog-top"><h2 id="export-title">Export a collection</h2><button class="icon-button close-dialog" aria-label="Close export"></button></div><p id="export-description" class="dialog-intro"></p><div class="export-options"><button id="export-json" class="button primary">Download JSON</button><button id="export-csv" class="button secondary">Download CSV</button></div><p class="small-note">A portable list of project links and review notes. Direct import into the RepoHub app is planned, and is not available in this draft.</p></dialog>
+  <dialog id="suggest-dialog" aria-labelledby="suggest-title"><div class="dialog-top"><h2 id="suggest-title">Suggest a project</h2><button class="icon-button close-dialog" aria-label="Close suggestion"></button></div><p class="dialog-intro">Prepare a suggestion for the curator. This draft downloads a Markdown file; nothing is sent automatically.</p><form id="suggest-form" class="suggest-form"><label>GitHub repository URL<input id="suggest-url" type="url" required placeholder="https://github.com/owner/project" pattern="https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/?"></label><label>What makes it useful?<textarea id="suggest-reason" required rows="4" placeholder="Who is it for, and what does it do well?"></textarea></label><label class="checkbox-label"><input id="suggest-author" type="checkbox">I’m involved in this project</label><button class="button primary" type="submit">Download suggestion</button></form></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

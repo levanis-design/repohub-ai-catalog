@@ -1,0 +1,7 @@
+node_modules/
+.taste-skill/
+.preview/
+*.tar.gz
+__pycache__/
+.DS_Store
+
