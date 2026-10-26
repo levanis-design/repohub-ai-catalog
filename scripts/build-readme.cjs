@@ -140,6 +140,6 @@ The listed tools have not been installed or workflow-tested by this catalog. The
 const expected = intro + sections + end;
 const file = path.join(root, 'README.md');
 if (process.argv.includes('--check')) {
-  if (fs.readFileSync(file, 'utf8') !== expected) { console.error('README is out of date. Run node scripts/build-readme.cjs'); process.exit(1); }
+  if (fs.readFileSync(file, 'utf8').replace(/\r\n/g,'\n') !== expected) { console.error('README is out of date. Run node scripts/build-readme.cjs'); process.exit(1); }
   console.log(`README matches ${projects.length} projects in ${categories.length} categories.`);
 } else { fs.writeFileSync(file, expected); console.log(`Generated README with ${projects.length} projects.`); }

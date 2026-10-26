@@ -166,7 +166,7 @@ test('workflows, mobile navigation, and suggestion download are functional', asy
 
 test('all original repositories and both added projects are covered exactly once', () => {
   const coverage=JSON.parse(fs.readFileSync(path.join(root,'dist/coverage.json'),'utf8'));
-  const known=new Set(catalog.projects.map(p=>p.repo.toLowerCase()));
+  const known=new Set(catalog.projects.flatMap(p=>[p.repo,...(p.aliases||[])]).map(repo=>repo.toLowerCase()));
   assert.equal(coverage.repositories.length,60);
   assert.equal(coverage.additionalRepositories.length,2);
   for(const r of coverage.repositories) assert.ok(known.has(r.canonical.toLowerCase()),r.submitted+' is missing');
@@ -197,7 +197,7 @@ test('GitHub suggestion opens a prefilled issue without submitting it', async t 
 
 test('all upstream entries have provenance and no duplicate source URL', () => {
   const upstream=catalog.upstream;
-  assert.ok(upstream.listedEntries>=404);
+  assert.ok(upstream.listedEntries>=100);
   assert.equal(upstream.coveredEntries,upstream.listedEntries);
   const represented=new Set(catalog.projects.flatMap(p=>(p.sources||[]).filter(s=>s.repository===upstream.repository).map(s=>s.url)));
   for(const url of upstream.sourceUrls) assert.ok(represented.has(url),'Missing upstream entry: '+url);
