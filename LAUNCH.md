@@ -1,26 +1,27 @@
-# Review and launch
+# Publication and maintenance
 
-## Ready to review
+The user approved the catalog and requested GitHub publication with the full original list: 60 unique seed repositories plus TradeDesk and RepoHub, for 62 projects.
 
-- Confirm the name, visual direction, initial project selection, and task categories.
-- Try search, combined filters, saving projects, comparing options, exports, and workflows.
-- Check the original-source setup, cost, platform, and license notes for projects you know well.
-- Decide whether to retain the two disclosed author projects.
+## Publication
 
-## Before the public launch
+- GitHub repository: https://github.com/levanis-design/repohub-ai-catalog
+- Static website: https://levanis-design.github.io/repohub-ai-catalog/
+- Original code and editorial text are MIT licensed; third-party projects retain their own terms.
+- Main-branch pushes validate the source and deploy `dist/` through GitHub Pages.
+- The original Sites review deployment retains its owner-private audience.
 
-1. Approve a public destination: a new GitHub repository and GitHub Pages, or public Sites hosting.
-2. Choose licenses for the original code and editorial dataset; this draft does not invent a grant.
-3. Confirm requirements against original setup docs, prioritizing the six “Start here” projects. Replace uncertain fields with verified requirements and evidence links.
-4. Perform a visual and keyboard pass in desktop and mobile browsers. Browser UI automation was unavailable in the build session, so responsive source checks and DOM interaction tests do not substitute for that pass.
-5. Keep the review labels honest. Only document real installation and workflow tests after completing them.
-6. Remove the `noindex,nofollow` metadata and the “Private review draft” notice only after approval to launch publicly.
-7. Set the final canonical URL, social preview image, sitemap, and robots.txt for the chosen host.
-8. Connect “Suggest a project” to the new repository's issue form if desired. The draft currently downloads a Markdown suggestion and sends nothing.
+## Follow-up improvements
+
+1. Confirm requirements against original setup docs, prioritizing the six “Start here” projects. Keep uncertain fields marked `See docs` or `Varies` until verified.
+2. Perform visual and keyboard review in desktop and mobile browsers. DOM interaction tests do not substitute for that pass.
+3. Only document installation and workflow evidence after completing the actual work.
+4. Consider a dedicated social-preview image and self-hosted fonts.
+5. Agree a supported file format before implementing direct RepoHub app import. Current exports are portable lists, not an app integration.
 
 ## Maintenance
 
-- Keep one source of truth in `dist/catalog.json`.
+- Keep one source of truth in `dist/catalog.json`; regenerate README with `node scripts/build-readme.cjs`.
+- Preserve seed-list provenance and aliases in `dist/coverage.json`.
 - Refresh GitHub metadata through a server-side or GitHub Actions job. Never put an API token in browser code.
 - Propose changes for review when projects are renamed, archived, removed, or materially change licensing.
 - Record documentation checks separately from installation tests.

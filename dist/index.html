@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="robots" content="noindex,nofollow">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://levanis-design.github.io/repohub-ai-catalog/">
   <meta name="description" content="Find practical AI tools and agent skills. Compare setup requirements, understand costs, and build a useful collection.">
   <meta name="theme-color" content="#eef3f3">
   <title>RepoHub AI Catalog — Find your next useful tool</title>
@@ -25,7 +26,7 @@
     <div class="sidebar-bottom"><div class="repo-note"><strong>From discovery to doing.</strong><p>A small collection of tools worth understanding.</p><a href="https://github.com/levanis-design/RepoHub" target="_blank" rel="noopener noreferrer">Meet the RepoHub app <span aria-hidden="true">↗</span></a></div><a class="curator" href="https://github.com/levanis-design" target="_blank" rel="noopener noreferrer"><span class="curator-avatar">LS</span><span>Curated by Levani Sidiani<small>Built in the open</small></span></a></div>
   </aside>
   <div class="app-frame">
-    <div class="topbar"><div class="breadcrumb">Library <span>/</span> <span id="breadcrumb-current">Explore</span></div><div class="draft-status"><span></span>Private review draft</div></div>
+    <div class="topbar"><div class="breadcrumb">Library <span>/</span> <span id="breadcrumb-current">Explore</span></div><a class="draft-status" href="https://github.com/levanis-design/repohub-ai-catalog" target="_blank" rel="noopener noreferrer">View on GitHub ↗</a></div>
     <main id="main" class="sheet" tabindex="-1">
       <div id="loading" class="loading-state"><h1>Loading the catalog</h1><p>Getting the projects and their review notes.</p></div>
       <section id="catalog-screen" class="screen" hidden>
@@ -56,7 +57,7 @@
   <dialog id="detail-dialog" class="detail-dialog" aria-labelledby="detail-title"><div id="detail-content"></div></dialog>
   <dialog id="compare-dialog" class="wide-dialog" aria-labelledby="compare-title"><div class="dialog-top"><h2 id="compare-title">Compare your options</h2><button class="icon-button close-dialog" aria-label="Close comparison"></button></div><p class="dialog-intro">Compare requirements first. Review labels describe documentation checks, not installation tests.</p><div id="comparison-content" class="comparison-scroll" tabindex="0" aria-label="Scrollable project comparison"></div></dialog>
   <dialog id="export-dialog" aria-labelledby="export-title"><div class="dialog-top"><h2 id="export-title">Export a collection</h2><button class="icon-button close-dialog" aria-label="Close export"></button></div><p id="export-description" class="dialog-intro"></p><div class="export-options"><button id="export-json" class="button primary">Download JSON</button><button id="export-csv" class="button secondary">Download CSV</button></div><p class="small-note">A portable list of project links and review notes. Direct import into the RepoHub app is planned, and is not available in this draft.</p></dialog>
-  <dialog id="suggest-dialog" aria-labelledby="suggest-title"><div class="dialog-top"><h2 id="suggest-title">Suggest a project</h2><button class="icon-button close-dialog" aria-label="Close suggestion"></button></div><p class="dialog-intro">Prepare a suggestion for the curator. This draft downloads a Markdown file; nothing is sent automatically.</p><form id="suggest-form" class="suggest-form"><label>GitHub repository URL<input id="suggest-url" type="url" required placeholder="https://github.com/owner/project" pattern="https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/?"></label><label>What makes it useful?<textarea id="suggest-reason" required rows="4" placeholder="Who is it for, and what does it do well?"></textarea></label><label class="checkbox-label"><input id="suggest-author" type="checkbox">I’m involved in this project</label><button class="button primary" type="submit">Download suggestion</button></form></dialog>
+  <dialog id="suggest-dialog" aria-labelledby="suggest-title"><div class="dialog-top"><h2 id="suggest-title">Suggest a project</h2><button class="icon-button close-dialog" aria-label="Close suggestion"></button></div><p class="dialog-intro">Open a prefilled GitHub issue to review and submit, or download your suggestion as Markdown. Nothing is submitted automatically.</p><form id="suggest-form" class="suggest-form"><label>GitHub repository URL<input id="suggest-url" type="url" required placeholder="https://github.com/owner/project" pattern="https://github\.com/[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+/?"></label><label>What makes it useful?<textarea id="suggest-reason" required rows="4" placeholder="Who is it for, and what does it do well?"></textarea></label><label class="checkbox-label"><input id="suggest-author" type="checkbox">I’m involved in this project</label><div class="export-options"><button class="button primary" type="submit" name="action" value="github">Open GitHub issue</button><button class="button secondary" type="submit" name="action" value="download">Download Markdown</button></div></form></dialog>
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 </body>
 </html>

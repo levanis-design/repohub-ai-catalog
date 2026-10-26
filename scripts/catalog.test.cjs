@@ -33,8 +33,9 @@ async function app(options = {}) {
 }
 
 test('dataset: unique real source links, honest review levels, and author disclosures', () => {
-  assert.equal(catalog.projects.length, 38);
-  assert.equal(new Set(catalog.projects.map(p => p.id)).size, 38);
+  assert.equal(catalog.projects.length, 62);
+  assert.equal(new Set(catalog.projects.map(p => p.id)).size, 62);
+  assert.equal(new Set(catalog.projects.map(p => p.repo.toLowerCase())).size, 62);
   for (const p of catalog.projects) {
     assert.match(p.url, /^https:\/\/github\.com\/[\w.-]+\/[\w.-]+$/);
     assert.equal(p.url, 'https://github.com/' + p.repo);
@@ -50,7 +51,7 @@ test('first load renders 12 real projects and source-derived counts', async t =>
   const a = await app(); t.after(a.cleanup);
   assert.equal(a.$('loading').hidden, true);
   assert.equal(a.w.document.querySelectorAll('.project-card').length, 12);
-  assert.match(a.$('results-count').textContent, /38 projects/);
+  assert.match(a.$('results-count').textContent, /62 projects/);
   assert.equal(a.w.document.querySelector('[data-nav=catalog]').getAttribute('aria-current'), 'page');
   assert.deepEqual(a.errors, []);
 });
@@ -63,7 +64,7 @@ test('search matches all query words, supports an empty result, and resets', asy
   a.input('search', 'no-such-project-123');
   assert.equal(a.$('empty-state').hidden, false);
   a.$('empty-reset').click();
-  assert.match(a.$('results-count').textContent, /38 projects/);
+  assert.match(a.$('results-count').textContent, /62 projects/);
 });
 
 test('platform, runtime, API, and GPU filters combine correctly', async t => {
@@ -80,11 +81,13 @@ test('platform, runtime, API, and GPU filters combine correctly', async t => {
 test('README evidence filter and experimental collection show the intended records', async t => {
   const a = await app(); t.after(a.cleanup);
   a.change('readme-only', true);
-  assert.match(a.$('results-count').textContent, /10 projects/);
+  assert.equal(a.w.document.querySelectorAll('.project-card').length,12);
+  assert.match(a.$('results-count').textContent, /16 projects/);
   a.$('clear-filters').click();
   a.w.document.querySelector('[data-collection=experimental]').click();
-  assert.match(a.$('results-count').textContent, /5 projects/);
-  assert.equal(a.w.document.querySelectorAll('.project-card .tag.experimental').length, 5);
+  const expected=catalog.projects.filter(p=>p.experimental).length;
+  assert.match(a.$('results-count').textContent, new RegExp(expected+' projects'));
+  assert.equal(a.w.document.querySelectorAll('.project-card .tag.experimental').length,Math.min(12,expected));
 });
 
 test('saving persists in local storage and saved collection can be emptied', async t => {
@@ -117,7 +120,7 @@ test('details contain source-specific limitations, real clone command, and no fa
   const a = await app(); t.after(a.cleanup);
   a.input('search', 'TradeDesk'); a.w.document.querySelector('[data-detail]').click();
   assert.equal(a.$('detail-dialog').open, true);
-  assert.match(a.$('detail-content').textContent, /Created by this catalog/);
+  assert.match(a.$('detail-content').textContent, /Maintained by this catalog/);
   assert.match(a.$('detail-content').textContent, /not been tested/);
   assert.match(a.$('detail-content').textContent, /git clone https:\/\/github.com\/levanis-design\/TradeDesk.git/);
 });
@@ -159,4 +162,35 @@ test('workflows, mobile navigation, and suggestion download are functional', asy
   a.$('suggest-form').dispatchEvent(new a.w.Event('submit',{bubbles:true,cancelable:true}));
   assert.match(await a.downloads[0].text(),/A useful example/);
   assert.equal(a.$('suggest-dialog').open,false);
+});
+
+test('all original repositories and both added projects are covered exactly once', () => {
+  const coverage=JSON.parse(fs.readFileSync(path.join(root,'dist/coverage.json'),'utf8'));
+  const known=new Set(catalog.projects.map(p=>p.repo.toLowerCase()));
+  assert.equal(coverage.repositories.length,60);
+  assert.equal(coverage.additionalRepositories.length,2);
+  for(const r of coverage.repositories) assert.ok(known.has(r.canonical.toLowerCase()),r.submitted+' is missing');
+  for(const repo of coverage.additionalRepositories) assert.ok(known.has(repo.toLowerCase()),repo+' is missing');
+  for(const alias of [...coverage.websiteAliases,...coverage.nestedSkillLinks]) assert.ok(known.has(alias.repository.toLowerCase()));
+});
+
+test('all categories and runtime types are reachable, and supporting resources are labeled', async t => {
+  const a=await app();t.after(a.cleanup);
+  for(const category of new Set(catalog.projects.map(p=>p.category))) assert.ok([...a.w.document.querySelectorAll('[data-category]')].some(b=>b.dataset.category===category),category+' filter is missing');
+  for(const runtime of new Set(catalog.projects.map(p=>p.execution))) assert.ok([...a.$('runtime').options].some(o=>o.value===runtime),runtime+' filter is missing');
+  a.input('search','MangoDisk');assert.match(a.$('project-grid').textContent,/Related resource/);
+  a.input('search','Osiris');assert.match(a.$('project-grid').textContent,/Fork/);
+});
+
+test('GitHub suggestion opens a prefilled issue without submitting it', async t => {
+  const a=await app();t.after(a.cleanup);let opened;
+  a.w.open=url=>{opened=new URL(url);};
+  a.$('suggest-url').value='https://github.com/owner/project';a.$('suggest-reason').value='Useful for research.';
+  const event=new a.w.Event('submit',{bubbles:true,cancelable:true});
+  Object.defineProperty(event,'submitter',{value:{value:'github'}});
+  a.$('suggest-form').dispatchEvent(event);
+  assert.equal(opened.origin,'https://github.com');
+  assert.equal(opened.pathname,'/levanis-design/repohub-ai-catalog/issues/new');
+  assert.match(opened.searchParams.get('body'),/Useful for research/);
+  assert.equal(a.downloads.length,0);
 });

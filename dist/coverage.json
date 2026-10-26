@@ -1,0 +1,264 @@
+{
+  "originalUniqueRepositories": 60,
+  "additionalAuthorProjects": 2,
+  "totalProjects": 62,
+  "normalization": "Duplicate links, case variants, trailing slashes, and tree/main paths map to one canonical repository.",
+  "repositories": [
+    {
+      "submitted": "emilkowalski/skills",
+      "canonical": "emilkowalski/skills"
+    },
+    {
+      "submitted": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "canonical": "nextlevelbuilder/ui-ux-pro-max-skill"
+    },
+    {
+      "submitted": "pbakaus/impeccable",
+      "canonical": "pbakaus/impeccable"
+    },
+    {
+      "submitted": "juliusbrussee/caveman",
+      "canonical": "JuliusBrussee/caveman"
+    },
+    {
+      "submitted": "AgricIDaniel/claude-seo",
+      "canonical": "AgriciDaniel/claude-seo"
+    },
+    {
+      "submitted": "heygen-com/hyperframes",
+      "canonical": "heygen-com/hyperframes"
+    },
+    {
+      "submitted": "garrytan/gstack",
+      "canonical": "garrytan/gstack"
+    },
+    {
+      "submitted": "odysseus-dev/odysseus",
+      "canonical": "odysseus-dev/odysseus"
+    },
+    {
+      "submitted": "hardikpandya/stop-slop",
+      "canonical": "hardikpandya/stop-slop"
+    },
+    {
+      "submitted": "Egonex-AI/Understand-Anything",
+      "canonical": "Egonex-AI/Understand-Anything"
+    },
+    {
+      "submitted": "mvanhorn/last30days-skill",
+      "canonical": "mvanhorn/last30days-skill"
+    },
+    {
+      "submitted": "anthropics/skills",
+      "canonical": "anthropics/skills"
+    },
+    {
+      "submitted": "dojocodinglabs/remotion-superpowers",
+      "canonical": "DojoCodingLabs/remotion-superpowers"
+    },
+    {
+      "submitted": "VoltAgent/awesome-agent-skills",
+      "canonical": "VoltAgent/awesome-agent-skills"
+    },
+    {
+      "submitted": "trailofbits/skills",
+      "canonical": "trailofbits/skills"
+    },
+    {
+      "submitted": "MIT-lcp/mimic-code",
+      "canonical": "MIT-LCP/mimic-code"
+    },
+    {
+      "submitted": "joeseesun/qiaomu-seo",
+      "canonical": "joeseesun/qiaomu-seo"
+    },
+    {
+      "submitted": "coreyhaines31/marketingskills",
+      "canonical": "coreyhaines31/marketingskills"
+    },
+    {
+      "submitted": "deanpeters/Product-Manager-Skills",
+      "canonical": "deanpeters/Product-Manager-Skills"
+    },
+    {
+      "submitted": "morluto/rea",
+      "canonical": "morluto/rea"
+    },
+    {
+      "submitted": "latent-spaces/brag",
+      "canonical": "latent-spaces/brag"
+    },
+    {
+      "submitted": "crosstalk-solutions/project-nomad",
+      "canonical": "Crosstalk-Solutions/project-nomad"
+    },
+    {
+      "submitted": "DigitalPlatDev/FreeDomain",
+      "canonical": "DigitalPlatDev/FreeDomain"
+    },
+    {
+      "submitted": "danielravina/stemkit",
+      "canonical": "danielravina/stemkit"
+    },
+    {
+      "submitted": "Open-Less/openless",
+      "canonical": "Open-Less/openless"
+    },
+    {
+      "submitted": "jub0t/Concat",
+      "canonical": "jub0t/Concat"
+    },
+    {
+      "submitted": "elie222/rakazo",
+      "canonical": "elie222/rakazo"
+    },
+    {
+      "submitted": "jamiepine/voicebox",
+      "canonical": "jamiepine/voicebox"
+    },
+    {
+      "submitted": "remotion-dev/remotion",
+      "canonical": "remotion-dev/remotion"
+    },
+    {
+      "submitted": "browser-use/browser-use",
+      "canonical": "browser-use/browser-use"
+    },
+    {
+      "submitted": "levanis-design/MeetNotes",
+      "canonical": "levanis-design/MeetNotes"
+    },
+    {
+      "submitted": "awesome-selfhosted/awesome-selfhosted",
+      "canonical": "awesome-selfhosted/awesome-selfhosted"
+    },
+    {
+      "submitted": "trycua/cua",
+      "canonical": "trycua/cua"
+    },
+    {
+      "submitted": "neonwatty/logo-designer-skill",
+      "canonical": "neonwatty/logo-designer-skill"
+    },
+    {
+      "submitted": "ruvnet/ruflo",
+      "canonical": "ruvnet/ruflo"
+    },
+    {
+      "submitted": "NandhaKishorM/laya",
+      "canonical": "NandhaKishorM/laya"
+    },
+    {
+      "submitted": "FlashML-org/FreeVideo",
+      "canonical": "FlashML-org/FreeVideo"
+    },
+    {
+      "submitted": "gnoviawan/agentic-marketing-team",
+      "canonical": "gnoviawan/agentic-marketing-team"
+    },
+    {
+      "submitted": "firecrawl/anydoc",
+      "canonical": "firecrawl/anydoc"
+    },
+    {
+      "submitted": "Jakeschincariol/replica-skill",
+      "canonical": "Jakeschincariol/replica-skill"
+    },
+    {
+      "submitted": "tinyhumansai/openhuman",
+      "canonical": "tinyhumansai/openhuman"
+    },
+    {
+      "submitted": "OpenBMB/VoxCPM",
+      "canonical": "OpenBMB/VoxCPM"
+    },
+    {
+      "submitted": "meituan-longcat/LongCat-Video",
+      "canonical": "meituan-longcat/LongCat-Video"
+    },
+    {
+      "submitted": "TauricResearch/TradingAgents",
+      "canonical": "TauricResearch/TradingAgents"
+    },
+    {
+      "submitted": "leonxlnx/taste-skill",
+      "canonical": "Leonxlnx/taste-skill"
+    },
+    {
+      "submitted": "harry0703/MangoDisk",
+      "canonical": "harry0703/MangoDisk"
+    },
+    {
+      "submitted": "harry0703/MoneyPrinterTurbo",
+      "canonical": "harry0703/MoneyPrinterTurbo"
+    },
+    {
+      "submitted": "calesthio/OpenMontage",
+      "canonical": "calesthio/OpenMontage"
+    },
+    {
+      "submitted": "Leron-X/leronx",
+      "canonical": "Leron-X/leronx"
+    },
+    {
+      "submitted": "nautechsystems/nautilus_trader",
+      "canonical": "nautechsystems/nautilus_trader"
+    },
+    {
+      "submitted": "affaan-m/ecc",
+      "canonical": "affaan-m/ECC"
+    },
+    {
+      "submitted": "ruvnet/ruview",
+      "canonical": "ruvnet/RuView"
+    },
+    {
+      "submitted": "diegosouzapw/OmniRoute",
+      "canonical": "cheaper-inference/OmniRoute"
+    },
+    {
+      "submitted": "levanis-design/osiris",
+      "canonical": "levanis-design/osiris"
+    },
+    {
+      "submitted": "headroomlabs-ai/headroom",
+      "canonical": "headroomlabs-ai/headroom"
+    },
+    {
+      "submitted": "MemPalace/mempalace",
+      "canonical": "MemPalace/mempalace"
+    },
+    {
+      "submitted": "webadderallorg/Recordly",
+      "canonical": "webadderallorg/Recordly"
+    },
+    {
+      "submitted": "Panniantong/Agent-Reach",
+      "canonical": "Panniantong/Agent-Reach"
+    },
+    {
+      "submitted": "benjitaylor/agentation",
+      "canonical": "benjitaylor/agentation"
+    },
+    {
+      "submitted": "tashfeenahmed/freellmapi",
+      "canonical": "tashfeenahmed/freellmapi"
+    }
+  ],
+  "additionalRepositories": [
+    "levanis-design/TradeDesk",
+    "levanis-design/RepoHub"
+  ],
+  "websiteAliases": [
+    {
+      "url": "https://mangodisk.app/",
+      "repository": "harry0703/MangoDisk"
+    }
+  ],
+  "nestedSkillLinks": [
+    {
+      "url": "https://github.com/anthropics/skills/tree/main/skills/frontend-design",
+      "repository": "anthropics/skills"
+    }
+  ]
+}
