@@ -16729,6 +16729,37 @@
           "revision": "1599e9a11660da14cf607e7c8d99c0154690c856"
         }
       ]
+    },
+    {
+      "id": "vostride--agent-qa",
+      "repo": "vostride/agent-qa",
+      "name": "agent-qa",
+      "category": "Web, Browser & Computer Use",
+      "platforms": [
+        "See docs"
+      ],
+      "execution": "MCP tooling",
+      "api": "Required",
+      "gpu": "Varies",
+      "summary": "Test web, Android and iOS journeys with persistent memidex memory, validated self-improvement and recorded steps/screenshots through CLI, dashboard or MCP.",
+      "bestFor": "Developers who want coding agents to verify user journeys and inspect the resulting evidence.",
+      "limitation": "Requires Node.js 24+, compatible model access and a browser/device environment. Free local software for permitted FSL-1.1-ALv2 use; model/device costs separate. Installation and real workflows have not been tested here. Setup: https://vostride.com/docs/agent-qa/quickstart",
+      "stars": 852,
+      "updated": "2026-11-10",
+      "license": "FSL-1.1-ALv2",
+      "review": "README reviewed",
+      "reviewedAt": "2026-11-10",
+      "experimental": false,
+      "authorProject": false,
+      "featured": false,
+      "url": "https://github.com/vostride/agent-qa",
+      "isFork": false,
+      "archived": false,
+      "metadataCheckedAt": "2026-11-10",
+      "upstreamListed": false,
+      "forks": 24,
+      "disabled": false,
+      "metadataStatus": "available"
     }
   ],
   "repository": "https://github.com/levanis-design/repohub-ai-catalog",

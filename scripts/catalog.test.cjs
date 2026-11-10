@@ -82,7 +82,7 @@ test('README evidence filter and experimental collection show the intended recor
   const a = await app(); t.after(a.cleanup);
   a.change('readme-only', true);
   assert.equal(a.w.document.querySelectorAll('.project-card').length,12);
-  assert.match(a.$('results-count').textContent, /16 projects/);
+  assert.match(a.$('results-count').textContent, new RegExp(catalog.projects.filter(p=>p.review==='README reviewed').length+' projects'));
   a.$('clear-filters').click();
   a.w.document.querySelector('[data-collection=experimental]').click();
   const expected=catalog.projects.filter(p=>p.experimental).length;

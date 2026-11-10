@@ -6,7 +6,7 @@ A practical English directory of AI tools, agent skills, models, and supporting 
 
 **[Explore the searchable catalog](https://levanis-design.github.io/repohub-ai-catalog/)** · [Suggest a project](https://github.com/levanis-design/repohub-ai-catalog/issues/new) · [Contribute](CONTRIBUTING.md) · [Download the dataset](dist/catalog.json)
 
-**432 repositories · 2 reference guides · 21 categories · Metadata refreshed November 10, 2026**
+**433 repositories · 2 reference guides · 21 categories · Metadata refreshed November 10, 2026**
 
 **Stars reflect popularity, not quality or usefulness.** Smaller, newer, or niche projects can be worth exploring. Consider their fit, documentation, maintenance, and what they actually do. Counts of 1,000 or more are rounded up to whole thousands (K); exact counts remain in the dataset.
 
@@ -55,7 +55,7 @@ These are editorial starting points, not claims of completed installation or wor
 ## What the labels mean
 
 - **Metadata reviewed:** the original GitHub description and repository facts were checked.
-- **README reviewed:** the original project documentation was also read. 16 projects have this label. Other repositories are metadata-reviewed; reference guides are marked separately.
+- **README reviewed:** the original project documentation was also read. 17 projects have this label. Other repositories are metadata-reviewed; reference guides are marked separately.
 - **Experimental:** early-stage, small-adoption, or limited-history projects. This is not a quality score.
 - **Related resource:** supporting software or research material that is not primarily an AI agent.
 - **Curator project:** a repository maintained by this catalog's curator. Osiris is also explicitly identified as an upstream fork.
@@ -282,6 +282,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 |---|---:|---|
 | [Agent Browser](https://github.com/vercel-labs/agent-browser) | 50K | Browser automation CLI for AI agents<br><sub>Metadata reviewed</sub> |
 | [Agent Reach](https://github.com/Panniantong/Agent-Reach) | 111K | Give an agent command-line access to search and read content across web and social sources.<br><sub>Metadata reviewed</sub> |
+| [agent-qa](https://github.com/vostride/agent-qa) | 852 | Test web, Android and iOS journeys with persistent memidex memory, validated self-improvement and recorded steps/screenshots through CLI, dashboard or MCP.<br><sub>README reviewed</sub> |
 | [Agent-S](https://github.com/simular-ai/Agent-S) | 13K | Agent S: the state-of-the-art open source computer use agents<br><sub>Metadata reviewed</sub> |
 | [Apify MCP](https://github.com/apify/apify-mcp-server) | 16K | The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.<br><sub>Metadata reviewed</sub> |
 | [ARTEMIS](https://github.com/google/artemis) | 18K | ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. It also achieves 99%+ success rate on AndroidWorld Benchmark.<br><sub>Metadata reviewed</sub> |
