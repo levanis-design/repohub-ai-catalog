@@ -6,7 +6,7 @@ A practical English directory of AI tools, agent skills, models, and supporting 
 
 **[Explore the searchable catalog](https://levanis-design.github.io/repohub-ai-catalog/)** · [Suggest a project](https://github.com/levanis-design/repohub-ai-catalog/issues/new) · [Contribute](CONTRIBUTING.md) · [Download the dataset](dist/catalog.json)
 
-**432 repositories · 2 reference guides · 21 categories · Metadata refreshed November 14, 2026**
+**432 repositories · 2 reference guides · 21 categories · Metadata refreshed November 15, 2026**
 
 **Stars reflect popularity, not quality or usefulness.** Smaller, newer, or niche projects can be worth exploring. Consider their fit, documentation, maintenance, and what they actually do. Counts of 1,000 or more are rounded up to whole thousands (K); exact counts remain in the dataset.
 
@@ -97,7 +97,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [OpenClaude](https://github.com/Twigpine/openclaude) | 35K | runs anywhere. uses anything<br><sub>Metadata reviewed</sub> |
 | [opencode](https://github.com/anomalyco/opencode) | 227K | The open source coding agent.<br><sub>Metadata reviewed</sub> |
 | [OpenHands](https://github.com/OpenHands/OpenHands) | 94K | OpenHands: AI-Driven Development<br><sub>Metadata reviewed</sub> |
-| [Pi (pi-mono)](https://github.com/earendil-works/pi) | 122K | AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI<br><sub>Metadata reviewed</sub> |
+| [Pi (pi-mono)](https://github.com/earendil-works/pi) | 123K | AI agent toolkit: unified LLM API, agent loop, TUI, coding agent CLI<br><sub>Metadata reviewed</sub> |
 | [Prime Agent](https://github.com/PrimeIntellect-ai/prime-agent) | 23K | A self-improving RLM agent for coding workflows and long-running autonomous tasks.<br><sub>Metadata reviewed</sub> |
 | [Qwen Code](https://github.com/QwenLM/qwen-code) | 31K | An open-source AI coding agent that lives in your terminal.<br><sub>Metadata reviewed</sub> |
 | [Tabby](https://github.com/TabbyML/tabby) | 34K | Self-hosted AI coding assistant<br><sub>Metadata reviewed</sub> |
@@ -112,17 +112,17 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Archon](https://github.com/coleam00/Archon) | 24K | The first open-source harness builder for AI coding. Make AI coding deterministic and repeatable.<br><sub>Metadata reviewed</sub> |
 | [AX (Agent Executor)](https://github.com/google/ax) | 15K | Agent Executor (AX) is Google's open agentic orchestration runtime<br><sub>Metadata reviewed</sub> |
 | [cmux](https://github.com/manaflow-ai/cmux) | 29K | Open source Ghostty-based macOS terminal with vertical tabs and notifications for AI coding agents. Built for multitasking, organization, and programmability.<br><sub>Metadata reviewed</sub> |
-| [herdr](https://github.com/herdrdev/herdr) | 51K | the runtime your coding agents live on<br><sub>Metadata reviewed</sub> |
+| [herdr](https://github.com/herdrdev/herdr) | 52K | the runtime your coding agents live on<br><sub>Metadata reviewed</sub> |
 | [Kiro Crew](https://github.com/kirodotdev/KiroCrew) | 5K | A persistent workspace for development work that self-improves and continues beyond one session.<br><sub>Metadata reviewed</sub> |
 | [Multica](https://github.com/multica-ai/multica) | 57K | Make humans and AI agents work as one team — open-source and self-hostable.<br><sub>Metadata reviewed</sub> |
 | [Oh My ClaudeCode](https://github.com/Yeachan-Heo/oh-my-claudecode) | 41K | Teams-first Multi-agent orchestration for Claude Code<br><sub>Metadata reviewed</sub> |
 | [Omnigent](https://github.com/omnigent-ai/omnigent) | 12K | Omnigent is an open-source AI agent framework and meta-harness: orchestrate Claude Code, Codex, Cursor, Pi, and custom agents — swap harnesses without rewriting, enforce policies and sandboxing, and collaborate in real time from any device.<br><sub>Metadata reviewed</sub> |
 | [omo (ex-oh-my-openagent)](https://github.com/code-yeongyu/oh-my-openagent) | 71K | OmO: Just type "mass ulw" keyword with your prompt. Now you are the master of graph engineering.<br><sub>Metadata reviewed</sub> |
-| [Orca](https://github.com/stablyai/orca) | 125K | Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.<br><sub>Metadata reviewed</sub> |
+| [Orca](https://github.com/stablyai/orca) | 126K | Orca lets you run a fleet of coding agents (e.g. Claude Code, Codex) with your own subscription. Available on desktop, mobile and remote runtime.<br><sub>Metadata reviewed</sub> |
 | [PAL (ex-zen-mcp-server)](https://github.com/BeehiveInnovations/pal-mcp-server) | 12K | The power of Claude Code / GeminiCLI / CodexCLI + [Gemini / OpenAI / OpenRouter / Azure / Grok / Ollama / Custom Model / All Of The Above] working as one.<br><sub>Metadata reviewed</sub> |
-| [Paperclip](https://github.com/paperclipai/paperclip) | 114K | The open-source app everyone uses to manage agents at work<br><sub>Metadata reviewed</sub> |
+| [Paperclip](https://github.com/paperclipai/paperclip) | 115K | The open-source app everyone uses to manage agents at work<br><sub>Metadata reviewed</sub> |
 | [Ruflo](https://github.com/ruvnet/ruflo) | 82K | Coordinate agent teams, workflows, and memory around coding assistants.<br><sub>Metadata reviewed</sub> |
-| [T3 Code](https://github.com/pingdotgg/t3code) | 61K | T3 Code is listed in the upstream Agent Orchestration collection. Read its original documentation for details.<br><sub>Metadata reviewed</sub> |
+| [T3 Code](https://github.com/pingdotgg/t3code) | 62K | T3 Code is listed in the upstream Agent Orchestration collection. Read its original documentation for details.<br><sub>Metadata reviewed</sub> |
 
 <a id="category-skills-plugins-methodologies"></a>
 
@@ -133,7 +133,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Agency Agents](https://github.com/msitarzewski/agency-agents) | 169K | A complete AI agency at your fingertips - From frontend wizards to Reddit community ninjas, from whimsy injectors to reality checkers. Each agent is a specialized expert with personality, processes, and proven deliverables.<br><sub>Metadata reviewed</sub> |
 | [Agent Skills](https://github.com/addyosmani/agent-skills) | 118K | Production-grade engineering skills for AI coding agents.<br><sub>Metadata reviewed</sub> |
 | [Agent Skills Spec](https://github.com/agentskills/agentskills) | 28K | Specification and documentation for Agent Skills<br><sub>Metadata reviewed</sub> |
-| [Anthropic Skills](https://github.com/anthropics/skills) | 195K | Official examples of reusable agent skills for documents, design, development, and other tasks.<br><sub>Metadata reviewed</sub> |
+| [Anthropic Skills](https://github.com/anthropics/skills) | 196K | Official examples of reusable agent skills for documents, design, development, and other tasks.<br><sub>Metadata reviewed</sub> |
 | [awesome-claude-code-subagents](https://github.com/VoltAgent/awesome-claude-code-subagents) | 27K | A collection of 100+ specialized Claude Code subagents covering a wide range of development use cases<br><sub>Metadata reviewed</sub> |
 | [awesome-copilot](https://github.com/github/awesome-copilot) | 42K | Community-contributed instructions, agents, skills, and configurations to help you make the most of GitHub Copilot.<br><sub>Metadata reviewed</sub> |
 | [awesome-cursorrules](https://github.com/PatrickJS/awesome-cursorrules) | 42K | Configuration files that enhance Cursor AI editor experience with custom rules and behaviors<br><sub>Metadata reviewed</sub> |
@@ -147,7 +147,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Codex Plugin](https://github.com/openai/codex-plugin-cc) | 36K | Use Codex from Claude Code to review code or delegate tasks.<br><sub>Metadata reviewed</sub> |
 | [Cursor Plugins](https://github.com/cursor/plugins) | 17K | Cursor plugin specification and official plugins<br><sub>Metadata reviewed</sub> |
 | [Distilly](https://github.com/titanwings/distilly) | 27K | Distilly — Distill how they think into reusable Skills for any Agent or Bot. Formerly Colleague Skill（原同事 Skill）.<br><sub>Metadata reviewed</sub> |
-| [ECC](https://github.com/affaan-m/ECC) | 303K | A collection of agent skills, memory patterns, security guidance, and research-first development workflows.<br><sub>Metadata reviewed</sub> |
+| [ECC](https://github.com/affaan-m/ECC) | 304K | A collection of agent skills, memory patterns, security guidance, and research-first development workflows.<br><sub>Metadata reviewed</sub> |
 | [GSD Core](https://github.com/open-gsd/gsd-core) | 12K | Git. Ship. Done - Core<br><sub>Metadata reviewed</sub> |
 | [gstack](https://github.com/garrytan/gstack) | 142K | Give Claude Code a structured engineering workflow, from product planning to browser QA and release preparation.<br><sub>README reviewed</sub> |
 | [Humanizer](https://github.com/blader/humanizer) | 70K | Agent skill that removes signs of AI-generated writing from text<br><sub>Metadata reviewed</sub> |
@@ -158,7 +158,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [No AI Slop](https://github.com/petergyang/no-ai-slop) | 14K | Removes 20+ patterns of AI slop from any piece of writing.<br><sub>Metadata reviewed</sub> |
 | [Obsidian Skills](https://github.com/obsidianmd/obsidian-skills) | 53K | Agent skills for Obsidian. Teach your agent to use Obsidian CLI and open formats including Markdown, Bases, JSON Canvas.<br><sub>Metadata reviewed</sub> |
 | [OpenSpec](https://github.com/Fission-AI/OpenSpec) | 75K | Spec-driven development (SDD) for AI coding assistants.<br><sub>Metadata reviewed</sub> |
-| [ponytail](https://github.com/DietrichGebert/ponytail) | 191K | Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.<br><sub>Metadata reviewed</sub> |
+| [ponytail](https://github.com/DietrichGebert/ponytail) | 192K | Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.<br><sub>Metadata reviewed</sub> |
 | [Qwen-MM-Plugins](https://github.com/QwenLM/Qwen-MM-Plugins) | 4K | Make any agent harness multimodal-native.<br><sub>Metadata reviewed</sub> |
 | [Replica Skill](https://github.com/Jakeschincariol/replica-skill) | 10K | An assistant workflow for studying an app's public behavior, planning an alternative, building it, and reviewing the result.<br><sub>README reviewed; Experimental</sub> |
 | [Skill Recorder](https://github.com/microsoft/skill-recorder) | 6K | Desktop app that records your on-screen work session and uses the GitHub Copilot SDK to reconstruct it as an intent + ordered steps, then builds a reusable Skill or Automation for Microsoft Autopilots like Scout, Microsoft Copilot Cowork, or Copilot Studio.<br><sub>Metadata reviewed</sub> |
@@ -184,7 +184,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [CodeGraph](https://github.com/colbymchenry/codegraph) | 78K | Pre-indexed code knowledge graph, auto syncs on code changes, for Claude Code, Codex, Gemini, Cursor, OpenCode, AntiGravity, Kiro, CoPilot, and Hermes Agent — fewer tokens, fewer tool calls, 100% local<br><sub>Metadata reviewed</sub> |
 | [Context7](https://github.com/upstash/context7) | 65K | Context7 Platform -- Up-to-date docs for AI agents<br><sub>Metadata reviewed</sub> |
 | [GitNexus](https://github.com/abhigyanpatwari/GitNexus) | 49K | GitNexus: The Zero-Server Code Intelligence Engine<br><sub>Metadata reviewed</sub> |
-| [Graphify](https://github.com/Graphify-Labs/graphify) | 148K | Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.<br><sub>Metadata reviewed</sub> |
+| [Graphify](https://github.com/Graphify-Labs/graphify) | 149K | Turn any codebase, with its docs, SQL schemas, configs, and PDFs, into a queryable knowledge graph. A /graphify skill for Claude Code, Cursor, Codex, and Gemini CLI: local deterministic AST parsing, every edge explained, no vector store.<br><sub>Metadata reviewed</sub> |
 | [OpenWiki](https://github.com/langchain-ai/openwiki) | 18K | OpenWiki is a CLI that writes and maintains agent documentation for your codebase.<br><sub>Metadata reviewed</sub> |
 | [RepoHub](https://github.com/levanis-design/RepoHub) | 2 | Explore GitHub projects, manage local repositories, connect coding assistants, and try projects in Docker.<br><sub>README reviewed; Experimental; Curator project</sub> |
 | [Serena](https://github.com/oraios/serena) | 32K | A powerful MCP toolkit for coding, providing semantic retrieval and editing capabilities - the IDE for your agent<br><sub>Metadata reviewed</sub> |
@@ -198,7 +198,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | Repository | Stars | What it helps with |
 |---|---:|---|
 | [agentsview](https://github.com/kenn-io/agentsview) | 7K | Local-first session search, analytics, insights, and token use statistics for coding agents, supporting Claude Code, Codex, and more than 50 other agents.<br><sub>Metadata reviewed</sub> |
-| [Caveman](https://github.com/JuliusBrussee/caveman) | 120K | A skill and proxy that encourage coding agents to respond more concisely and reduce context overhead.<br><sub>Metadata reviewed</sub> |
+| [Caveman](https://github.com/JuliusBrussee/caveman) | 121K | A skill and proxy that encourage coding agents to respond more concisely and reduce context overhead.<br><sub>Metadata reviewed</sub> |
 | [CC Switch](https://github.com/farion1231/cc-switch) | 155K | A cross-platform desktop All-in-One assistant for Claude Code, Codex, OpenCode,DeepSeek Harness and more. Only official website: ccswitch.io<br><sub>Metadata reviewed</sub> |
 | [claude-code-router](https://github.com/musistudio/claude-code-router) | 39K | One local control plane for every AI agent: route across models, fuse new capabilities, orchestrate tools, and stay fully in control.<br><sub>Metadata reviewed</sub> |
 | [Context Mode](https://github.com/mksglu/context-mode) | 35K | Free, local plugin that keeps tool output out of your coding agent's context window. Sandbox and SQLite FTS5 search, 99% fewer bytes in context. Works with Claude Code, Codex, Pi, OMP, OpenCode, Gemini CLI, Copilot CLI and 4 more agents. Zero telemetry.<br><sub>Metadata reviewed</sub> |
@@ -267,10 +267,10 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [GitHub MCP](https://github.com/github/github-mcp-server) | 35K | GitHub's official MCP Server<br><sub>Metadata reviewed</sub> |
 | [Google Workspace CLI](https://github.com/googleworkspace/cli) | 33K | Google Workspace CLI — one command-line tool for Drive, Gmail, Calendar, Sheets, Docs, Chat, Admin, and more. Dynamically built from Google Discovery Service. Includes AI agent skills.<br><sub>Metadata reviewed</sub> |
 | [LinkedIn MCP](https://github.com/stickerdaniel/linkedin-mcp-server) | 5K | Open-source MCP server for LinkedIn. Give Claude and any MCP-compatible AI agent access to profiles, companies, jobs, and messages.<br><sub>Metadata reviewed</sub> |
-| [MCP Servers](https://github.com/modelcontextprotocol/servers) | 92K | Model Context Protocol Reference Servers<br><sub>Metadata reviewed</sub> |
+| [MCP Servers](https://github.com/modelcontextprotocol/servers) | 93K | Model Context Protocol Reference Servers<br><sub>Metadata reviewed</sub> |
 | [Notion MCP](https://github.com/makenotion/notion-mcp-server) | 5K | Official Notion MCP Server<br><sub>Metadata reviewed</sub> |
 | [Power BI Modeling MCP](https://github.com/microsoft/powerbi-modeling-mcp) | 2K | The Power BI Modeling MCP Server, brings Power BI semantic modeling capabilities to your AI agents.<br><sub>Metadata reviewed</sub> |
-| [Sentry Toolkit](https://github.com/getsentry/toolkit) | 964 | Agentic tooling for Sentry<br><sub>Metadata reviewed</sub> |
+| [Sentry Toolkit](https://github.com/getsentry/toolkit) | 963 | Agentic tooling for Sentry<br><sub>Metadata reviewed</sub> |
 | [Stripe MCP](https://github.com/stripe/ai) | 3K | One-stop shop for building AI-powered products and businesses with Stripe.<br><sub>Metadata reviewed</sub> |
 | [Supabase MCP](https://github.com/supabase/mcp) | 4K | Connect Supabase to your AI assistants<br><sub>Metadata reviewed</sub> |
 
@@ -281,7 +281,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | Repository | Stars | What it helps with |
 |---|---:|---|
 | [Agent Browser](https://github.com/vercel-labs/agent-browser) | 52K | Browser automation CLI for AI agents<br><sub>Metadata reviewed</sub> |
-| [Agent Reach](https://github.com/Panniantong/Agent-Reach) | 112K | Give an agent command-line access to search and read content across web and social sources.<br><sub>Metadata reviewed</sub> |
+| [Agent Reach](https://github.com/Panniantong/Agent-Reach) | 113K | Give an agent command-line access to search and read content across web and social sources.<br><sub>Metadata reviewed</sub> |
 | [Agent-S](https://github.com/simular-ai/Agent-S) | 13K | Agent S: the state-of-the-art open source computer use agents<br><sub>Metadata reviewed</sub> |
 | [Apify MCP](https://github.com/apify/apify-mcp-server) | 17K | The Apify MCP server enables your AI agents to extract data from social media, search engines, maps, e-commerce sites, or any other website using thousands of ready-made scrapers, crawlers, and automation tools available on the Apify Store.<br><sub>Metadata reviewed</sub> |
 | [ARTEMIS](https://github.com/google/artemis) | 18K | ARTEMIS turns natural-language instructions into reliable Android automation. It automates end-to-end workflows, captures logs, and integrates seamlessly with AI coding assistants such as Antigravity, Codex, and Claude Code. It also achieves 99%+ success rate on AndroidWorld Benchmark.<br><sub>Metadata reviewed</sub> |
@@ -304,7 +304,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Perplexity MCP](https://github.com/perplexityai/modelcontextprotocol) | 3K | The official MCP server implementation for the Perplexity API Platform<br><sub>Metadata reviewed</sub> |
 | [Playwright CLI](https://github.com/microsoft/playwright-cli) | 16K | CLI for common Playwright actions. Record and generate Playwright code, inspect selectors and take screenshots.<br><sub>Metadata reviewed</sub> |
 | [Playwright MCP](https://github.com/microsoft/playwright-mcp) | 40K | Playwright MCP server<br><sub>Metadata reviewed</sub> |
-| [Scrapling](https://github.com/D4Vinci/Scrapling) | 103K | The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev<br><sub>Metadata reviewed</sub> |
+| [Scrapling](https://github.com/D4Vinci/Scrapling) | 104K | The BEST Web Scraping framework that handles everything from a single request to a full-scale crawl! Don't be shy, join here: https://discord.gg/EMgGbDceNQ and follow here for daily tips and tricks: https://x.com/Scrapling_dev<br><sub>Metadata reviewed</sub> |
 | [Skyvern](https://github.com/Skyvern-AI/skyvern) | 24K | Automate browser based workflows with AI<br><sub>Metadata reviewed</sub> |
 | [Stagehand](https://github.com/browserbase/stagehand) | 27K | The SDK to extract data and interact with any site on the web. Get started with Claude Code, Codex, Eve, Mastra, and more.<br><sub>Metadata reviewed</sub> |
 | [Tavily MCP](https://github.com/tavily-ai/tavily-mcp) | 3K | Production ready MCP server with real-time search, extract, map & crawl.<br><sub>Metadata reviewed</sub> |
@@ -322,14 +322,14 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Claude Mem](https://github.com/thedotmack/claude-mem) | 118K | Persistent Context Across Sessions for Every Agent – Captures everything your agent does during sessions, compresses it with AI, and injects relevant context back into future sessions. Works with Claude Code, OpenClaw, Codex, Gemini, Hermes, Copilot, OpenCode + More<br><sub>Metadata reviewed</sub> |
 | [cognee](https://github.com/topoteretes/cognee) | 34K | Cognee is the open-source AI memory platform for agents. Give your AI agents persistent long-term memory with small models for free<br><sub>Metadata reviewed</sub> |
 | [FAISS](https://github.com/facebookresearch/faiss) | 42K | A library for efficient similarity search and clustering of dense vectors.<br><sub>Metadata reviewed</sub> |
-| [gbrain](https://github.com/garrytan/gbrain) | 33K | Garry's Opinionated OpenClaw/Hermes Agent Brain<br><sub>Metadata reviewed</sub> |
+| [gbrain](https://github.com/garrytan/gbrain) | 34K | Garry's Opinionated OpenClaw/Hermes Agent Brain<br><sub>Metadata reviewed</sub> |
 | [Graphiti](https://github.com/getzep/graphiti) | 33K | Build Real-Time Knowledge Graphs for AI Agents<br><sub>Metadata reviewed</sub> |
 | [Hindsight](https://github.com/vectorize-io/hindsight) | 62K | Hindsight: Agent Memory That Learns<br><sub>Metadata reviewed</sub> |
 | [Letta](https://github.com/letta-ai/letta) | 26K | Platform for stateful agents: AI with advanced memory that can learn and self-improve over time.<br><sub>Metadata reviewed</sub> |
 | [LightRAG](https://github.com/HKUDS/LightRAG) | 41K | [EMNLP2025] LightRAG: Simple and Fast Retrieval-Augmented Generation<br><sub>Metadata reviewed</sub> |
 | [LlamaIndex](https://github.com/run-llama/llama_index) | 53K | LlamaIndex is the document processing platform for AI<br><sub>Metadata reviewed</sub> |
 | [MarkItDown](https://github.com/microsoft/markitdown) | 196K | Python tool for converting files and office documents to Markdown.<br><sub>Metadata reviewed</sub> |
-| [mem0](https://github.com/mem0ai/mem0) | 69K | The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.<br><sub>Metadata reviewed</sub> |
+| [mem0](https://github.com/mem0ai/mem0) | 70K | The Memory Layer for AI Agents - Drop-in memory infrastructure for AI agents and apps. Context that persists. Built for production.<br><sub>Metadata reviewed</sub> |
 | [MemPalace](https://github.com/MemPalace/mempalace) | 61K | Add persistent memory and retrieval to an AI workflow.<br><sub>Metadata reviewed</sub> |
 | [Milvus](https://github.com/milvus-io/milvus) | 47K | Milvus is a high-performance, cloud-native vector database built for scalable vector ANN search<br><sub>Metadata reviewed</sub> |
 | [OpenViking](https://github.com/volcengine/OpenViking) | 43K | Self-evolving Context Database for AI Agents. Unify Agent Memory, Knowledge RAG and Skills.<br><sub>Metadata reviewed</sub> |
@@ -367,8 +367,8 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Codex Security](https://github.com/openai/codex-security) | 14K | OpenAI's Codex Security CLI and TypeScript SDK for finding, validating, and fixing security vulnerabilities. npm: https://www.npmjs.com/package/@openai/codex-security<br><sub>Metadata reviewed</sub> |
 | [Defending Code Reference Harness](https://github.com/anthropics/defending-code-reference-harness) | 8K | Skills for threat modeling, scanning, triage, patching, plus an autonomous scanning harness you can /customize<br><sub>Metadata reviewed</sub> |
 | [PentAGI](https://github.com/vxcontrol/pentagi) | 35K | Fully autonomous AI Agents system capable of performing complex penetration testing tasks<br><sub>Metadata reviewed</sub> |
-| [REA](https://github.com/morluto/rea) | 460K | Use agents and a shared MCP interface to investigate binaries, application behavior, and runtime activity.<br><sub>Metadata reviewed</sub> |
-| [Security Audit Skill](https://github.com/cloudflare/security-audit-skill) | 73K | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings<br><sub>Metadata reviewed</sub> |
+| [REA](https://github.com/morluto/rea) | 462K | Use agents and a shared MCP interface to investigate binaries, application behavior, and runtime activity.<br><sub>Metadata reviewed</sub> |
+| [Security Audit Skill](https://github.com/cloudflare/security-audit-skill) | 74K | A coding-agent skill for multi-phase security audits with independently verified, machine-readable findings<br><sub>Metadata reviewed</sub> |
 | [SkillSpector](https://github.com/NVIDIA/SkillSpector) | 27K | Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, security risks, prompt injection, data exfiltration, and supply-chain risks in Claude Code, Codex, and MCP skills before you install them.<br><sub>Metadata reviewed</sub> |
 | [Strix](https://github.com/usestrix/strix) | 76K | Open-source AI penetration testing tool to find and fix your app’s vulnerabilities.<br><sub>Metadata reviewed</sub> |
 | [Trail of Bits Skills](https://github.com/trailofbits/skills) | 9K | Security-oriented agent skills for code auditing, verification, malware analysis, and reverse engineering.<br><sub>README reviewed</sub> |
@@ -394,9 +394,9 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [LM Studio](https://github.com/lmstudio-ai/lms) | 6K | LM Studio CLI<br><sub>Metadata reviewed</sub> |
 | [LocalAI](https://github.com/mudler/LocalAI) | 51K | LocalAI is the open-source AI engine. Run any model - LLMs, vision, voice, image, video - on any hardware. No GPU required.<br><sub>Metadata reviewed</sub> |
 | [Modular (MAX & Mojo)](https://github.com/modular/modular) | 31K | The Modular Platform (includes MAX & Mojo)<br><sub>Metadata reviewed</sub> |
-| [Needle](https://github.com/cactus-compute/needle) | 7 | Cactus Needle has moved to cactus-compute/cactus.<br><sub>Metadata reviewed</sub> |
+| [Needle](https://github.com/cactus-compute/needle) | 11 | Cactus Needle has moved to cactus-compute/cactus.<br><sub>Metadata reviewed</sub> |
 | [NVIDIA Dynamo](https://github.com/ai-dynamo/dynamo) | 9K | A Datacenter Scale Distributed Inference Serving Framework<br><sub>Metadata reviewed</sub> |
-| [Ollama](https://github.com/ollama/ollama) | 187K | Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.<br><sub>Metadata reviewed</sub> |
+| [Ollama](https://github.com/ollama/ollama) | 188K | Get up and running with Kimi, GLM, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.<br><sub>Metadata reviewed</sub> |
 | [oMLX](https://github.com/jundot/omlx) | 24K | LLM inference server with continuous batching & SSD caching for Apple Silicon — managed from the macOS menu bar<br><sub>Metadata reviewed</sub> |
 | [RuView](https://github.com/ruvnet/RuView) | 105K | Explore spatial sensing, presence detection, and related research using signals from Wi-Fi hardware.<br><sub>Metadata reviewed; Related resource</sub> |
 | [SGLang](https://github.com/sgl-project/sglang) | 39K | SGLang is a high-performance serving framework for large language models and multimodal models.<br><sub>Metadata reviewed</sub> |
@@ -464,19 +464,19 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Comp AI CRM](https://github.com/trycompai/crm) | 13K | Comp AI CRM is an open source, CRM designed for AI agents. Agentic-first CRM.<br><sub>Metadata reviewed</sub> |
 | [DB-GPT](https://github.com/eosphoros-ai/DB-GPT) | 21K | open-source agentic AI data assistant for the next generation of AI + Data products.<br><sub>Metadata reviewed</sub> |
 | [GenOffice](https://github.com/genspark-ai/genoffice) | 13K | Free, open-source AI Office suite: Docs, Sheets, Slides, PDF, Markdown and HTML editors with a built-in AI agent, plus a `genoffice` CLI and agent skill so Claude Code, Codex and Cursor can create and edit real .docx/.xlsx/.pptx files locally. Bring your own key. macOS, Windows & Linux.<br><sub>Metadata reviewed</sub> |
-| [Knowledge Work Plugins](https://github.com/anthropics/knowledge-work-plugins) | 36K | Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork<br><sub>Metadata reviewed</sub> |
+| [Knowledge Work Plugins](https://github.com/anthropics/knowledge-work-plugins) | 37K | Open source repository of plugins primarily intended for knowledge workers to use in Claude Cowork<br><sub>Metadata reviewed</sub> |
 | [Marketing Skills](https://github.com/coreyhaines31/marketingskills) | 61K | Give an AI assistant reusable workflows for copywriting, conversion, SEO, analytics, and growth.<br><sub>Metadata reviewed</sub> |
-| [Meetily](https://github.com/Zackriya-Solutions/meetily) | 33K | Privacy-first AI meeting note taker for Windows and macOS. Free, open source (MIT). On-device Whisper/Parakeet transcription and speaker diarization, no meeting bot. Open-source alternative to Granola, Otter and Fireflies. https://meetily.ai<br><sub>Metadata reviewed</sub> |
+| [Meetily](https://github.com/Zackriya-Solutions/meetily) | 33K | Privacy-first AI meeting note taker for Windows, macOS and Linux. Free, open source (MIT). On-device Whisper/Parakeet transcription and speaker diarization, no meeting bot. Open-source alternative to Granola, Otter and Fireflies. https://meetily.ai<br><sub>Metadata reviewed</sub> |
 | [MeetNotes](https://github.com/levanis-design/MeetNotes) | 1 | A meeting-assistant project from the catalog's curator.<br><sub>Metadata reviewed; Experimental; Curator project</sub> |
 | [OpenBot](https://github.com/CopilotKit/OpenBot) | 13K | Open-source AI coworkers that each get a computer of their own: a browser, files and tools, with every action decided before it happens and recorded after. Bring any AG-UI agent.<br><sub>Metadata reviewed</sub> |
 | [OpenWorker](https://github.com/andrewyng/openworker) | 20K | OpenWorker is listed in the upstream Business & Work Agents collection. Read its original documentation for details.<br><sub>Metadata reviewed</sub> |
-| [PM Skills](https://github.com/phuryn/pm-skills) | 28K | PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.<br><sub>Metadata reviewed</sub> |
-| [PPT Master](https://github.com/hugohe3/ppt-master) | 77K | AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He<br><sub>Metadata reviewed</sub> |
+| [PM Skills](https://github.com/phuryn/pm-skills) | 29K | PM Skills Marketplace: 100+ agentic skills, commands, and plugins — from discovery to strategy, execution, launch, and growth.<br><sub>Metadata reviewed</sub> |
+| [PPT Master](https://github.com/hugohe3/ppt-master) | 78K | AI turns documents or topics into real, native PowerPoint decks—with native shapes, transitions and animations, data-backed charts and tables on demand, audio narration from speaker notes, and support for your own .pptx templates. · by Hugo He<br><sub>Metadata reviewed</sub> |
 | [Product Manager Skills](https://github.com/deanpeters/Product-Manager-Skills) | 9K | Apply structured product methods to discovery, prioritization, roadmaps, and product documents.<br><sub>README reviewed</sub> |
 | [Qiaomu SEO](https://github.com/joeseesun/qiaomu-seo) | 474 | Guide an agent through SEO research, audits, implementation, and verification.<br><sub>Metadata reviewed; Experimental</sub> |
 | [QM](https://github.com/yc-software/qm) | 16K | Multiplayer agent harness for teams<br><sub>Metadata reviewed</sub> |
 | [Rowboat](https://github.com/rowboatlabs/rowboat) | 19K | Your agent team, in one group chat.<br><sub>Metadata reviewed</sub> |
-| [Univer](https://github.com/dream-num/univer) | 25K | Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.<br><sub>Metadata reviewed</sub> |
+| [Univer](https://github.com/dream-num/univer) | 26K | Build your own AI office with Univer Office SDK. Bring editing, calculation, collaboration, and file processing into your product for people and AI agents. Built on an extensible open-source core.<br><sub>Metadata reviewed</sub> |
 | [WrenAI](https://github.com/Canner/WrenAI) | 19K | GenBI (Generative BI) for AI agents, an open-source, governed text-to-SQL through an open context layer that turns natural-language questions into trusted dashboards, charts, and SQL across 20+ data sources, such as BigQuery, Snowflake, PostgreSQL, ClickHouse, Amazon Redshift, Databricks and more.<br><sub>Metadata reviewed</sub> |
 
 <a id="category-research-education"></a>
@@ -485,7 +485,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 
 | Repository | Stars | What it helps with |
 |---|---:|---|
-| [Academic Research Skills](https://github.com/Imbad0202/academic-research-skills) | 57K | Academic Research Skills for Claude Code: research → write → review → revise → finalize<br><sub>Metadata reviewed</sub> |
+| [Academic Research Skills](https://github.com/Imbad0202/academic-research-skills) | 58K | Academic Research Skills for Claude Code: research → write → review → revise → finalize<br><sub>Metadata reviewed</sub> |
 | [AutoResearch](https://github.com/karpathy/autoresearch) | 101K | AI agents running research on single-GPU nanochat training automatically<br><sub>Metadata reviewed</sub> |
 | [DeepTutor](https://github.com/HKUDS/DeepTutor) | 60K | DeepTutor: Lifelong Personalized Tutoring. https://deeptutor.info/.<br><sub>Metadata reviewed</sub> |
 | [Feynman](https://github.com/Companion-Inc/feynman) | 11K | The open source AI research agent.<br><sub>Metadata reviewed</sub> |
@@ -535,7 +535,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [DESIGN.md](https://github.com/google-labs-code/design.md) | 29K | A format specification for describing a visual identity to coding agents. DESIGN.md gives agents a persistent, structured understanding of a design system.<br><sub>Metadata reviewed</sub> |
 | [Diagram Design](https://github.com/cathrynlavery/diagram-design) | 68K | Editorial diagram design for Claude Code, Codex, GitHub Copilot, Cursor, Factory Droid, Qoder, and Pi. 45 diagram types. Self-contained HTML + SVG. No shadows. No Mermaid slop.<br><sub>Metadata reviewed</sub> |
 | [Draw.io MCP](https://github.com/jgraph/drawio-mcp) | 6K | Draw.io MCP is listed in the upstream Design, UI & Diagrams collection. Read its original documentation for details.<br><sub>Metadata reviewed</sub> |
-| [Emil's design skills](https://github.com/emilkowalski/skills) | 57K | Bring interaction, animation, and interface craft into your coding assistant's workflow.<br><sub>Metadata reviewed</sub> |
+| [Emil's design skills](https://github.com/emilkowalski/skills) | 58K | Bring interaction, animation, and interface craft into your coding assistant's workflow.<br><sub>Metadata reviewed</sub> |
 | [Excalidraw](https://github.com/excalidraw/excalidraw) | 136K | Virtual whiteboard for sketching hand-drawn like diagrams<br><sub>Metadata reviewed</sub> |
 | [Figma Context MCP](https://github.com/GLips/Figma-Context-MCP) | 17K | MCP server to provide Figma layout information to AI coding agents like Cursor<br><sub>Metadata reviewed</sub> |
 | [Huashu Design](https://github.com/alchaincyf/huashu-design) | 30K | Huashu Design 3.0 · 在 agent 里打一句话，拿回能交付的设计：网页 / App 原型 / 可编辑 PPTX / 动画 / 信息图 · 六个候选挑三个方向 · 84 种带样张的风格库 · 越用越懂你的外观账本与设计体检 · HTML-native design skill for Claude Code, Codex, Cursor & any agent<br><sub>Metadata reviewed</sub> |
@@ -543,14 +543,14 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Impeccable](https://github.com/pbakaus/impeccable) | 111K | A design language and set of commands for critiquing and improving AI-built interfaces.<br><sub>Metadata reviewed</sub> |
 | [Interface Design](https://github.com/Dammyjay93/interface-design) | 6K | Design engineering for Claude Code. Craft, memory, and enforcement for consistent UI.<br><sub>Metadata reviewed</sub> |
 | [Jakub Krehel Skills](https://github.com/jakubkrehel/skills) | 13K | A collection of agent skills that help you build great interfaces.<br><sub>Metadata reviewed</sub> |
-| [Logo Designer Skill](https://github.com/neonwatty/logo-designer-skill) | 201 | Guide an assistant through exploration and iteration when creating an SVG logo.<br><sub>Metadata reviewed; Experimental</sub> |
+| [Logo Designer Skill](https://github.com/neonwatty/logo-designer-skill) | 202 | Guide an assistant through exploration and iteration when creating an SVG logo.<br><sub>Metadata reviewed; Experimental</sub> |
 | [MCP for Blender](https://github.com/ahujasid/mcp-for-blender) | 35K | Community plugin to control Blender 3D with any LLM of your choice. Not affiliated with the official Blender Foundation.<br><sub>Metadata reviewed</sub> |
 | [Mermaid](https://github.com/mermaid-js/mermaid) | 92K | Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown<br><sub>Metadata reviewed</sub> |
 | [Open Design](https://github.com/nexu-io/open-design) | 108K | The 1st Collaborative AI Design Agent Workspace. Local-first and open source. Create motion, prototypes, websites, apps, dashboards, presentations, images, and videos with your team and AI agents. Share work, exchange feedback, and iterate together in one workspace.<br><sub>Metadata reviewed</sub> |
 | [OpenUI](https://github.com/wandb/openui) | 23K | OpenUI let's you describe UI using your imagination, then see it rendered live.<br><sub>Metadata reviewed</sub> |
 | [screenshot-to-code](https://github.com/abi/screenshot-to-code) | 82K | Drop in a screenshot and convert it to clean code (HTML/Tailwind/React/Vue)<br><sub>Metadata reviewed</sub> |
 | [shadcn/ui](https://github.com/shadcn-ui/ui) | 129K | Composable, accessible components with thoughtful defaults. Build your own component library with code you can customize, extend, and make your own.<br><sub>Metadata reviewed</sub> |
-| [Taste Skill](https://github.com/Leonxlnx/taste-skill) | 116K | Guide coding agents toward deliberate art direction, references, and browser-based design review.<br><sub>Metadata reviewed</sub> |
+| [Taste Skill](https://github.com/Leonxlnx/taste-skill) | 117K | Guide coding agents toward deliberate art direction, references, and browser-based design review.<br><sub>Metadata reviewed</sub> |
 | [text-to-cad](https://github.com/earthtojake/text-to-cad) | 27K | Design physical products with AI<br><sub>Metadata reviewed</sub> |
 | [ThreeUI](https://github.com/MengTo/threeui) | 8K | Open-source ThreeUI Community catalog with live interactive components and complete Community source.<br><sub>Metadata reviewed</sub> |
 | [tldraw](https://github.com/tldraw/tldraw) | 52K | Build infinite canvas apps in React with the tldraw SDK. World's best, top-most agent recommended #1 five star SDK.<br><sub>Metadata reviewed</sub> |
@@ -605,7 +605,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [RealtimeTTS](https://github.com/KoljaB/RealtimeTTS) | 5K | Converts text to speech in realtime<br><sub>Metadata reviewed</sub> |
 | [VibeVoice](https://github.com/microsoft/VibeVoice) | 58K | Open-Source Frontier Voice AI<br><sub>Metadata reviewed</sub> |
 | [Voicebox](https://github.com/jamiepine/voicebox) | 61K | A local AI voice studio for speech generation, voice cloning, and dictation.<br><sub>Metadata reviewed</sub> |
-| [VoiceStudio](https://github.com/debpalash/VoiceStudio) | 111K | VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.<br><sub>Metadata reviewed</sub> |
+| [VoiceStudio](https://github.com/debpalash/VoiceStudio) | 112K | VoiceStudio is the open-source, fully-local ElevenLabs alternative — voice cloning, voice design, video dubbing, dictation, transcription & audiobook creation in 646 languages.<br><sub>Metadata reviewed</sub> |
 | [VoxCPM](https://github.com/OpenBMB/VoxCPM) | 43K | A speech-generation model family for multilingual TTS, voice design, and cloning.<br><sub>Metadata reviewed</sub> |
 | [whisper.cpp](https://github.com/ggml-org/whisper.cpp) | 56K | Port of OpenAI's Whisper model in C/C++<br><sub>Metadata reviewed</sub> |
 
@@ -618,15 +618,15 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [12-Factor Agents](https://github.com/humanlayer/12-factor-agents) | 28K | What are the principles we can use to build LLM-powered software that is actually good enough to put in the hands of production customers?<br><sub>Metadata reviewed</sub> |
 | [AI Agent Book](https://github.com/bojieli/ai-agent-book) | 59K | AI Agent Book is part of the upstream Resources & Learning collection. Read the original documentation for features and setup.<br><sub>Metadata reviewed</sub> |
 | [AI Agents for Beginners](https://github.com/microsoft/ai-agents-for-beginners) | 80K | 18 Lessons to Get Started Building AI Agents<br><sub>Metadata reviewed</sub> |
-| [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch) | 79K | Learn AI Engineering! Learn it. Build it. Ship it for others.<br><sub>Metadata reviewed</sub> |
+| [AI Engineering from Scratch](https://github.com/rohitg00/ai-engineering-from-scratch) | 80K | Learn AI Engineering! Learn it. Build it. Ship it for others.<br><sub>Metadata reviewed</sub> |
 | [AI Engineering Hub](https://github.com/patchy631/ai-engineering-hub) | 42K | In-depth tutorials on LLMs, RAGs and real-world AI agent applications.<br><sub>Metadata reviewed</sub> |
 | [Anthropic Cookbook](https://github.com/anthropics/claude-cookbooks) | 55K | A collection of notebooks/recipes showcasing some fun and effective ways of using Claude.<br><sub>Metadata reviewed</sub> |
 | [Awesome Agent Skills](https://github.com/VoltAgent/awesome-agent-skills) | 38K | Browse agent skills from official teams and community maintainers across coding, documents, design, and other tasks.<br><sub>README reviewed</sub> |
-| [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | 58K | A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins<br><sub>Metadata reviewed</sub> |
+| [Awesome Claude Code](https://github.com/hesreallyhim/awesome-claude-code) | 59K | A hand-picked collection of the finest of resources for the most awesome of agents, Claude Code, the undisputed champion of coding companions, from the unstoppable team at Anthropic PBC (no affiliation). A delectable showcase of top tier skills, ambidextrous agents, scintillating status lines, top notch developer tooling, and also we have plugins<br><sub>Metadata reviewed</sub> |
 | [Awesome Free LLM APIs](https://github.com/mnfst/awesome-free-llm-apis) | 14K | List of Permanent Free LLM API (API Keys)<br><sub>Metadata reviewed</sub> |
 | [Awesome LLM Apps](https://github.com/Shubhamsaboo/awesome-llm-apps) | 145K | 100+ AI Agents, Agent Skills and RAG Apps - Free and Open Source.<br><sub>Metadata reviewed</sub> |
 | [Awesome MCP Servers](https://github.com/punkpeye/awesome-mcp-servers) | 98K | A collection of MCP servers.<br><sub>Metadata reviewed</sub> |
-| [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) | 337K | A broad directory of services and applications you can host on your own infrastructure.<br><sub>Metadata reviewed; Related resource</sub> |
+| [Awesome Selfhosted](https://github.com/awesome-selfhosted/awesome-selfhosted) | 338K | A broad directory of services and applications you can host on your own infrastructure.<br><sub>Metadata reviewed; Related resource</sub> |
 | [Build Your Own X](https://github.com/codecrafters-io/build-your-own-x) | 563K | Master programming by recreating your favorite technologies from scratch.<br><sub>Metadata reviewed</sub> |
 | [Claude × HyperFrames Guide](https://github.com/heygen-com/hyperframes/blob/main/docs/guides/claude-design-hyperframes.md) | — | A practical guide to using Claude with HyperFrames for agent-assisted video creation.<br><sub>Guide; Reference imported</sub> |
 | [Claude Code Best Practice](https://github.com/shanraisshan/claude-code-best-practice) | 70K | from vibe coding to agentic engineering - practice makes claude perfect<br><sub>Metadata reviewed</sub> |
@@ -635,7 +635,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [Gemini API Cookbook](https://github.com/google-gemini/cookbook) | 18K | Examples and guides for using the Gemini API<br><sub>Metadata reviewed</sub> |
 | [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) | 124K | 21 Lessons, Get Started Building with Generative AI<br><sub>Metadata reviewed</sub> |
 | [Hands-On Large Language Models](https://github.com/HandsOnLLM/Hands-On-Large-Language-Models) | 31K | Official code repo for the O'Reilly Book - "Hands-On Large Language Models"<br><sub>Metadata reviewed</sub> |
-| [Hello-Agents](https://github.com/datawhalechina/hello-agents) | 87K | Hello-Agents is part of the upstream Resources & Learning collection. Read the original documentation for features and setup.<br><sub>Metadata reviewed</sub> |
+| [Hello-Agents](https://github.com/datawhalechina/hello-agents) | 88K | Hello-Agents is part of the upstream Resources & Learning collection. Read the original documentation for features and setup.<br><sub>Metadata reviewed</sub> |
 | [LLM-Maintained Wiki (Karpathy)](https://gist.github.com/karpathy/442a6bf555914893e9891c11519de94f) | — | Andrej Karpathy’s conceptual notes on using an LLM to build and maintain a personal Markdown wiki.<br><sub>Gist; Reference imported</sub> |
 | [LLMs from Scratch](https://github.com/rasbt/LLMs-from-scratch) | 109K | Implement a ChatGPT-like LLM in PyTorch from scratch, step by step<br><sub>Metadata reviewed</sub> |
 | [MangoDisk](https://github.com/harry0703/MangoDisk) | 6K | Analyze disk usage and manage cleanup, duplicates, applications, and system-maintenance tasks.<br><sub>Metadata reviewed; Related resource</sub> |
@@ -643,7 +643,7 @@ No project is currently labeled **Installation tested** or **Workflow tested**. 
 | [ML for Beginners](https://github.com/microsoft/ML-For-Beginners) | 93K | 12 weeks, 26 lessons, 52 quizzes, classic Machine Learning for all<br><sub>Metadata reviewed</sub> |
 | [OpenAI Cookbook](https://github.com/openai/openai-cookbook) | 78K | Examples and guides for using the OpenAI API<br><sub>Metadata reviewed</sub> |
 | [prompts.chat](https://github.com/f/prompts.chat) | 178K | f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.<br><sub>Metadata reviewed</sub> |
-| [Public APIs](https://github.com/public-apis/public-apis) | 499K | A collective list of free APIs<br><sub>Metadata reviewed</sub> |
+| [Public APIs](https://github.com/public-apis/public-apis) | 500K | A collective list of free APIs<br><sub>Metadata reviewed</sub> |
 | [System Prompts Collection](https://github.com/x1xhlol/system-prompts-and-models-of-ai-tools) | 145K | FULL Augment Code, Claude Code, Cluely, CodeBuddy, Comet, Cursor, Devin AI, Junie, Kiro, Leap.new, Lovable, Manus, NotionAI, Orchids.app, Perplexity, Poke, Qoder, Replit, Same.dev, Trae, Traycer AI, VSCode Agent, Warp.dev, Windsurf, Xcode, Z.ai Code, Dia & v0. (And other Open Sourced) System Prompts, Internal Tools & AI Models<br><sub>Metadata reviewed</sub> |
 | [system_prompts_leaks](https://github.com/asgeirtj/system_prompts_leaks) | 72K | Leaked system prompts of ChatGPT, Claude, Gemini and more. The hidden system prompt of every popular chatbot, in full, every version since May 2025. Also Anthropic Claude Code, OpenAI Codex, Google Antigravity, xAI Grok, Meta Muse, Moonshot Kimi, Alibaba Qwen, Z.ai GLM ZCode, MiniMax, Cursor, Perplexity, DeepSeek and 30+ others. Updated daily.<br><sub>Metadata reviewed</sub> |
 
